@@ -55,8 +55,7 @@ $xxlarge-up: 120.063em;
 //----------------------------------*\
 // Colors
 //----------------------------------*/
-$blue: #00a3e8;
-$red: #ec0500  ;
+$dark-tan: #af8e4f;
 $dark-gray: #333;
 $medium-gray: #717f80;
 $light-gray: #f3f3f3;
@@ -70,13 +69,13 @@ $base-background-color: white;
 // Font Colors
 //----------------------------------*/
 $base-font-color: $dark-gray;
-$base-accent-color: $blue;
+$base-accent-color: $dark-tan;
 
 //----------------------------------*\
 // Link Colors
 //----------------------------------*/
-$base-link-color: $base-accent-color;
-$hover-link-color: darken($base-accent-color, 15);
+$base-link-color: $dark-gray;
+$hover-link-color: $dark-tan;
 $base-button-color: $base-link-color;
 $hover-button-color: $hover-link-color;
 
