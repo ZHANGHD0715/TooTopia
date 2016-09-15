@@ -53,17 +53,23 @@ $xlarge-only:90.063em 120em;
 $xxlarge-up: 120.063em;
 
 //----------------------------------*\
+// Widths
+//----------------------------------*/
+$full-width: 1280px;
+
+//----------------------------------*\
 // Colors
 //----------------------------------*/
 $dark-tan: #af8e4f;
 $dark-gray: #333;
 $medium-gray: #717f80;
-$light-gray: #f3f3f3;
+$light-gray: #eee;
+$white: #fff;
 
 //----------------------------------*\
 // Background Color
 //----------------------------------*/
-$base-background-color: white;
+$base-background-color: $light-gray;
 
 //----------------------------------*\
 // Font Colors

@@ -3,9 +3,10 @@
 *************************************************************************************/
 
 @media screen and (min-width: $medium-up) {
-    .top-bar {
+    .contain-to-grid .top-bar {
     	padding-top: 20px;
         height: 80px;
+        max-width: $full-width;
         .title-area {
 			.name {
 				a {
