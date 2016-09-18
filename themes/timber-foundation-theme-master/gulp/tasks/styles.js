@@ -4,6 +4,7 @@ var sourcemaps   = require('gulp-sourcemaps');
 var gulp         = require('gulp');
 var notify       = require('gulp-notify');
 var handleErrors = require('../util/handleErrors');
+var browserSync  = require('browser-sync').create();
 
 var includePaths = [
     'bower_components/foundation/scss',
@@ -32,5 +33,6 @@ gulp.task('styles', function () {
         //     title: 'Success',
         //     message: 'Your styles have compiled successfully'
         // }))
-        .pipe(gulp.dest(targetCSSDir));
+        .pipe(gulp.dest(targetCSSDir))
+        .pipe(browserSync.stream({match: '**/*.css'}));
 });
