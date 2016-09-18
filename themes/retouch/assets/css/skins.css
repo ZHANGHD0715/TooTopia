@@ -1,0 +1,424 @@
+.color-skin-1 #respond input#submit,
+.color-skin-1 .widget_calendar caption,
+.color-skin-1 #masthead .navbar-toggle:hover, 
+.color-skin-1 #masthead .navbar-toggle:focus,
+.color-skin-1 .flat-color, 
+.color-skin-1 .flat-color.btn-bordered:hover,
+.color-skin-1 .controls .caroufredsel-prev, 
+.color-skin-1 .controls .caroufredsel-next,
+.color-skin-1 .portfolio-item .portfolio-thumb .image-overlay,
+.color-skin-1 .portfolio-item .portfolio-thumb .portfolio-zoom:hover, 
+.color-skin-1 .portfolio-item .portfolio-thumb .portfolio-link:hover,
+.color-skin-1 #toTopHover,
+.color-skin-1 .portfolio .nav-pills > li.active > a,
+.color-skin-1 .portfolio .nav-pills > li.active > a:hover,
+.color-skin-1 .portfolio .nav-pills > li.active > a:focus,
+.color-skin-1 .pricing .price,
+.color-skin-1 .rt-error404,
+.color-skin-1 .fallback-post-type-icon,
+.color-skin-1 .the-icons a:hover,
+.color-skin-1 .team-member .social-links {
+    background-color: #2ecc71;
+}
+
+.color-skin-1 #respond input#submit,
+.color-skin-1 #masthead .navbar-toggle:hover, 
+.color-skin-1 #masthead .navbar-toggle:focus,
+.color-skin-1 .flat-color,
+.color-skin-1 .flat-color:hover,
+.color-skin-1 .flat-color:active,
+.color-skin-1 .portfolio .nav-pills > li.active > a,
+.color-skin-1 .portfolio .nav-pills > li.active > a:hover,
+.color-skin-1 .portfolio .nav-pills > li.active > a:focus {
+    border-color: #2ecc71;
+}
+
+.color-skin-1 #respond input#submit:hover, 
+.color-skin-1 #respond input#submit:active,
+.color-skin-1 a:hover, 
+.color-skin-1 a:focus,
+.color-skin-1 .nav-tabs > li.active > a,
+.color-skin-1 .nav-tabs > li.active > a:hover,
+.color-skin-1 .nav-tabs > li.active > a:focus,
+.color-skin-1 .flat-color:hover,  
+.color-skin-1 .flat-color.btn-bordered,
+.color-skin-1 #footer-2 a:hover,
+.color-skin-1 .service .service-icon {
+    color: #2ecc71;
+}
+
+@media (min-width: 768px) {
+    .color-skin-1 #masthead .navbar-nav > li > a:hover, 
+    .color-skin-1 #masthead .navbar-nav > li > a:focus,
+    .color-skin-1 #masthead .navbar-nav > .open > a, 
+    .color-skin-1 #masthead .navbar-nav > .open > a:hover, 
+    .color-skin-1 #masthead .navbar-nav > .open > a:focus {
+        color: #2ecc71;
+    }
+    .color-skin-1 #masthead .navbar-nav > .active > a, 
+    .color-skin-1 #masthead .navbar-nav > .active > a:hover, 
+    .color-skin-1 #masthead .navbar-nav > .active > a:focus,
+    .color-skin-1 #masthead .navbar-nav > .current-menu-parent > a, 
+    .color-skin-1 #masthead .navbar-nav > .current-menu-parent > a:hover, 
+    .color-skin-1 #masthead .navbar-nav > .current-menu-parent > a:focus,
+    .color-skin-1 #masthead.affix .navbar-nav > .active > a, 
+    .color-skin-1 #masthead.affix .navbar-nav > .active > a:hover, 
+    .color-skin-1 #masthead.affix .navbar-nav > .active > a:focus,
+    .color-skin-1 #masthead .navbar-nav > .active > a:after,
+    .color-skin-1 #masthead .navbar-nav > .current-menu-parent > a:after {
+        border-bottom-color: #2ecc71;
+    }
+    
+    
+    .color-skin-1 #masthead .navbar-nav > li .dropdown-menu {
+        border-top-color: #2ecc71;
+    }
+    .color-skin-1 #masthead .dropdown-menu > .active > a, 
+    .color-skin-1 #masthead .dropdown-menu > .active > a:hover, 
+    .color-skin-1 #masthead .dropdown-menu > .active > a:focus, 
+    .color-skin-1 #masthead .dropdown-menu > li > a:hover, 
+    .color-skin-1 #masthead .dropdown-menu > li > a:focus {
+        background-color: #2ecc71;
+        border-color: #2ecc71;
+    }
+}
+
+.color-skin-2 #respond input#submit,
+.color-skin-2 .widget_calendar caption,
+.color-skin-2 #masthead .navbar-toggle:hover, 
+.color-skin-2 #masthead .navbar-toggle:focus,
+.color-skin-2 .flat-color, 
+.color-skin-2 .flat-color.btn-bordered:hover,
+.color-skin-2 .controls .caroufredsel-prev, 
+.color-skin-2 .controls .caroufredsel-next,
+.color-skin-2 .portfolio-item .portfolio-thumb .image-overlay,
+.color-skin-2 .portfolio-item .portfolio-thumb .portfolio-zoom:hover, 
+.color-skin-2 .portfolio-item .portfolio-thumb .portfolio-link:hover,
+.color-skin-2 #toTopHover,
+.color-skin-2 .portfolio .nav-pills > li.active > a,
+.color-skin-2 .portfolio .nav-pills > li.active > a:hover,
+.color-skin-2 .portfolio .nav-pills > li.active > a:focus,
+.color-skin-2 .pricing .price,
+.color-skin-2 .rt-error404,
+.color-skin-2 .fallback-post-type-icon,
+.color-skin-2 .the-icons a:hover,
+.color-skin-2 .team-member .social-links {
+    background-color: #3498db;
+}
+
+.color-skin-2 #respond input#submit,
+.color-skin-2 #masthead .navbar-toggle:hover, 
+.color-skin-2 #masthead .navbar-toggle:focus,
+.color-skin-2 .flat-color,
+.color-skin-2 .flat-color:hover,
+.color-skin-2 .flat-color:active,
+.color-skin-2 .portfolio .nav-pills > li.active > a,
+.color-skin-2 .portfolio .nav-pills > li.active > a:hover,
+.color-skin-2 .portfolio .nav-pills > li.active > a:focus {
+    border-color: #3498db;
+}
+
+.color-skin-2 #respond input#submit:hover, 
+.color-skin-2 #respond input#submit:active,
+.color-skin-2 a:hover, 
+.color-skin-2 a:focus,
+.color-skin-2 .nav-tabs > li.active > a,
+.color-skin-2 .nav-tabs > li.active > a:hover,
+.color-skin-2 .nav-tabs > li.active > a:focus,
+.color-skin-2 .flat-color:hover,  
+.color-skin-2 .flat-color.btn-bordered,
+.color-skin-2 #footer-2 a:hover,
+.color-skin-2 .service .service-icon {
+    color: #3498db;
+}
+
+@media (min-width: 768px) {
+    .color-skin-2 #masthead .navbar-nav > li > a:hover, 
+    .color-skin-2 #masthead .navbar-nav > li > a:focus,
+    .color-skin-2 #masthead .navbar-nav > .open > a, 
+    .color-skin-2 #masthead .navbar-nav > .open > a:hover, 
+    .color-skin-2 #masthead .navbar-nav > .open > a:focus {
+        color: #3498db;
+    }
+    .color-skin-2 #masthead .navbar-nav > .active > a, 
+    .color-skin-2 #masthead .navbar-nav > .active > a:hover, 
+    .color-skin-2 #masthead .navbar-nav > .active > a:focus,
+    .color-skin-2 #masthead .navbar-nav > .current-menu-parent > a, 
+    .color-skin-2 #masthead .navbar-nav > .current-menu-parent > a:hover, 
+    .color-skin-2 #masthead .navbar-nav > .current-menu-parent > a:focus,
+    .color-skin-2 #masthead.affix .navbar-nav > .active > a, 
+    .color-skin-2 #masthead.affix .navbar-nav > .active > a:hover, 
+    .color-skin-2 #masthead.affix .navbar-nav > .active > a:focus,
+    .color-skin-2 #masthead .navbar-nav > .active > a:after,
+    .color-skin-2 #masthead .navbar-nav > .current-menu-parent > a:after {
+        border-bottom-color: #3498db;
+    }
+    
+    
+    .color-skin-2 #masthead .navbar-nav > li .dropdown-menu {
+        border-top-color: #3498db;
+    }
+    .color-skin-2 #masthead .dropdown-menu > .active > a, 
+    .color-skin-2 #masthead .dropdown-menu > .active > a:hover, 
+    .color-skin-2 #masthead .dropdown-menu > .active > a:focus, 
+    .color-skin-2 #masthead .dropdown-menu > li > a:hover, 
+    .color-skin-2 #masthead .dropdown-menu > li > a:focus {
+        background-color: #3498db;
+        border-color: #3498db;
+    }
+}
+
+.color-skin-3 #respond input#submit,
+.color-skin-3 .widget_calendar caption,
+.color-skin-3 #masthead .navbar-toggle:hover, 
+.color-skin-3 #masthead .navbar-toggle:focus,
+.color-skin-3 .flat-color, 
+.color-skin-3 .flat-color.btn-bordered:hover,
+.color-skin-3 .controls .caroufredsel-prev, 
+.color-skin-3 .controls .caroufredsel-next,
+.color-skin-3 .portfolio-item .portfolio-thumb .image-overlay,
+.color-skin-3 .portfolio-item .portfolio-thumb .portfolio-zoom:hover, 
+.color-skin-3 .portfolio-item .portfolio-thumb .portfolio-link:hover,
+.color-skin-3 #toTopHover,
+.color-skin-3 .portfolio .nav-pills > li.active > a,
+.color-skin-3 .portfolio .nav-pills > li.active > a:hover,
+.color-skin-3 .portfolio .nav-pills > li.active > a:focus,
+.color-skin-3 .pricing .price,
+.color-skin-3 .rt-error404,
+.color-skin-3 .fallback-post-type-icon,
+.color-skin-3 .the-icons a:hover,
+.color-skin-3 .team-member .social-links {
+    background-color: #f1c40f;
+}
+
+.color-skin-3 #respond input#submit,
+.color-skin-3 #masthead .navbar-toggle:hover, 
+.color-skin-3 #masthead .navbar-toggle:focus,
+.color-skin-3 .flat-color,
+.color-skin-3 .flat-color:hover,
+.color-skin-3 .flat-color:active,
+.color-skin-3 .portfolio .nav-pills > li.active > a,
+.color-skin-3 .portfolio .nav-pills > li.active > a:hover,
+.color-skin-3 .portfolio .nav-pills > li.active > a:focus {
+    border-color: #f1c40f;
+}
+
+.color-skin-3 #respond input#submit:hover, 
+.color-skin-3 #respond input#submit:active,
+.color-skin-3 a:hover, 
+.color-skin-3 a:focus,
+.color-skin-3 .nav-tabs > li.active > a,
+.color-skin-3 .nav-tabs > li.active > a:hover,
+.color-skin-3 .nav-tabs > li.active > a:focus,
+.color-skin-3 .flat-color:hover,  
+.color-skin-3 .flat-color.btn-bordered,
+.color-skin-3 #footer-2 a:hover,
+.color-skin-3 .service .service-icon {
+    color: #f1c40f;
+}
+
+@media (min-width: 768px) {
+    .color-skin-3 #masthead .navbar-nav > li > a:hover, 
+    .color-skin-3 #masthead .navbar-nav > li > a:focus,
+    .color-skin-3 #masthead .navbar-nav > .open > a, 
+    .color-skin-3 #masthead .navbar-nav > .open > a:hover, 
+    .color-skin-3 #masthead .navbar-nav > .open > a:focus {
+        color: #f1c40f;
+    }
+    .color-skin-3 #masthead .navbar-nav > .active > a, 
+    .color-skin-3 #masthead .navbar-nav > .active > a:hover, 
+    .color-skin-3 #masthead .navbar-nav > .active > a:focus,
+    .color-skin-3 #masthead .navbar-nav > .current-menu-parent > a, 
+    .color-skin-3 #masthead .navbar-nav > .current-menu-parent > a:hover, 
+    .color-skin-3 #masthead .navbar-nav > .current-menu-parent > a:focus,
+    .color-skin-3 #masthead.affix .navbar-nav > .active > a, 
+    .color-skin-3 #masthead.affix .navbar-nav > .active > a:hover, 
+    .color-skin-3 #masthead.affix .navbar-nav > .active > a:focus,
+    .color-skin-3 #masthead .navbar-nav > .active > a:after,
+    .color-skin-3 #masthead .navbar-nav > .current-menu-parent > a:after {
+        border-bottom-color: #f1c40f;
+    }
+    
+    
+    .color-skin-3 #masthead .navbar-nav > li .dropdown-menu {
+        border-top-color: #f1c40f;
+    }
+    .color-skin-3 #masthead .dropdown-menu > .active > a, 
+    .color-skin-3 #masthead .dropdown-menu > .active > a:hover, 
+    .color-skin-3 #masthead .dropdown-menu > .active > a:focus, 
+    .color-skin-3 #masthead .dropdown-menu > li > a:hover, 
+    .color-skin-3 #masthead .dropdown-menu > li > a:focus {
+        background-color: #f1c40f;
+        border-color: #f1c40f;
+    }
+}
+
+.color-skin-4 #respond input#submit,
+.color-skin-4 .widget_calendar caption,
+.color-skin-4 #masthead .navbar-toggle:hover, 
+.color-skin-4 #masthead .navbar-toggle:focus,
+.color-skin-4 .flat-color, 
+.color-skin-4 .flat-color.btn-bordered:hover,
+.color-skin-4 .controls .caroufredsel-prev, 
+.color-skin-4 .controls .caroufredsel-next,
+.color-skin-4 .portfolio-item .portfolio-thumb .image-overlay,
+.color-skin-4 .portfolio-item .portfolio-thumb .portfolio-zoom:hover, 
+.color-skin-4 .portfolio-item .portfolio-thumb .portfolio-link:hover,
+.color-skin-4 #toTopHover,
+.color-skin-4 .portfolio .nav-pills > li.active > a,
+.color-skin-4 .portfolio .nav-pills > li.active > a:hover,
+.color-skin-4 .portfolio .nav-pills > li.active > a:focus,
+.color-skin-4 .pricing .price,
+.color-skin-4 .rt-error404,
+.color-skin-4 .fallback-post-type-icon,
+.color-skin-4 .the-icons a:hover,
+.color-skin-4 .team-member .social-links {
+    background-color: #e67e22;
+}
+
+.color-skin-4 #respond input#submit,
+.color-skin-4 #masthead .navbar-toggle:hover, 
+.color-skin-4 #masthead .navbar-toggle:focus,
+.color-skin-4 .flat-color,
+.color-skin-4 .flat-color:hover,
+.color-skin-4 .flat-color:active,
+.color-skin-4 .portfolio .nav-pills > li.active > a,
+.color-skin-4 .portfolio .nav-pills > li.active > a:hover,
+.color-skin-4 .portfolio .nav-pills > li.active > a:focus {
+    border-color: #e67e22;
+}
+
+.color-skin-4 #respond input#submit:hover, 
+.color-skin-4 #respond input#submit:active,
+.color-skin-4 a:hover, 
+.color-skin-4 a:focus,
+.color-skin-4 .nav-tabs > li.active > a,
+.color-skin-4 .nav-tabs > li.active > a:hover,
+.color-skin-4 .nav-tabs > li.active > a:focus,
+.color-skin-4 .flat-color:hover,  
+.color-skin-4 .flat-color.btn-bordered,
+.color-skin-4 #footer-2 a:hover,
+.color-skin-4 .service .service-icon {
+    color: #e67e22;
+}
+
+@media (min-width: 768px) {
+    .color-skin-4 #masthead .navbar-nav > li > a:hover, 
+    .color-skin-4 #masthead .navbar-nav > li > a:focus,
+    .color-skin-4 #masthead .navbar-nav > .open > a, 
+    .color-skin-4 #masthead .navbar-nav > .open > a:hover, 
+    .color-skin-4 #masthead .navbar-nav > .open > a:focus {
+        color: #e67e22;
+    }
+    .color-skin-4 #masthead .navbar-nav > .active > a, 
+    .color-skin-4 #masthead .navbar-nav > .active > a:hover, 
+    .color-skin-4 #masthead .navbar-nav > .active > a:focus,
+    .color-skin-4 #masthead .navbar-nav > .current-menu-parent > a, 
+    .color-skin-4 #masthead .navbar-nav > .current-menu-parent > a:hover, 
+    .color-skin-4 #masthead .navbar-nav > .current-menu-parent > a:focus,
+    .color-skin-4 #masthead.affix .navbar-nav > .active > a, 
+    .color-skin-4 #masthead.affix .navbar-nav > .active > a:hover, 
+    .color-skin-4 #masthead.affix .navbar-nav > .active > a:focus,
+    .color-skin-4 #masthead .navbar-nav > .active > a:after,
+    .color-skin-4 #masthead .navbar-nav > .current-menu-parent > a:after {
+        border-bottom-color: #e67e22;
+    }
+    
+    
+    .color-skin-4 #masthead .navbar-nav > li .dropdown-menu {
+        border-top-color: #e67e22;
+    }
+    .color-skin-4 #masthead .dropdown-menu > .active > a, 
+    .color-skin-4 #masthead .dropdown-menu > .active > a:hover, 
+    .color-skin-4 #masthead .dropdown-menu > .active > a:focus, 
+    .color-skin-4 #masthead .dropdown-menu > li > a:hover, 
+    .color-skin-4 #masthead .dropdown-menu > li > a:focus {
+        background-color: #e67e22;
+        border-color: #e67e22;
+    }
+}
+
+.color-skin-5 #respond input#submit,
+.color-skin-5 .widget_calendar caption,
+.color-skin-5 #masthead .navbar-toggle:hover, 
+.color-skin-5 #masthead .navbar-toggle:focus,
+.color-skin-5 .flat-color, 
+.color-skin-5 .flat-color.btn-bordered:hover,
+.color-skin-5 .controls .caroufredsel-prev, 
+.color-skin-5 .controls .caroufredsel-next,
+.color-skin-5 .portfolio-item .portfolio-thumb .image-overlay,
+.color-skin-5 .portfolio-item .portfolio-thumb .portfolio-zoom:hover, 
+.color-skin-5 .portfolio-item .portfolio-thumb .portfolio-link:hover,
+.color-skin-5 #toTopHover,
+.color-skin-5 .portfolio .nav-pills > li.active > a,
+.color-skin-5 .portfolio .nav-pills > li.active > a:hover,
+.color-skin-5 .portfolio .nav-pills > li.active > a:focus,
+.color-skin-5 .pricing .price,
+.color-skin-5 .rt-error404,
+.color-skin-5 .fallback-post-type-icon,
+.color-skin-5 .the-icons a:hover,
+.color-skin-5 .team-member .social-links {
+    background-color: #16a085;
+}
+
+.color-skin-5 #respond input#submit,
+.color-skin-5 #masthead .navbar-toggle:hover, 
+.color-skin-5 #masthead .navbar-toggle:focus,
+.color-skin-5 .flat-color,
+.color-skin-5 .flat-color:hover,
+.color-skin-5 .flat-color:active,
+.color-skin-5 .portfolio .nav-pills > li.active > a,
+.color-skin-5 .portfolio .nav-pills > li.active > a:hover,
+.color-skin-5 .portfolio .nav-pills > li.active > a:focus {
+    border-color: #16a085;
+}
+
+.color-skin-5 #respond input#submit:hover, 
+.color-skin-5 #respond input#submit:active,
+.color-skin-5 a:hover, 
+.color-skin-5 a:focus,
+.color-skin-5 .nav-tabs > li.active > a,
+.color-skin-5 .nav-tabs > li.active > a:hover,
+.color-skin-5 .nav-tabs > li.active > a:focus,
+.color-skin-5 .flat-color:hover,  
+.color-skin-5 .flat-color.btn-bordered,
+.color-skin-5 #footer-2 a:hover,
+.color-skin-5 .service .service-icon {
+    color: #16a085;
+}
+
+@media (min-width: 768px) {
+    .color-skin-5 #masthead .navbar-nav > li > a:hover, 
+    .color-skin-5 #masthead .navbar-nav > li > a:focus,
+    .color-skin-5 #masthead .navbar-nav > .open > a, 
+    .color-skin-5 #masthead .navbar-nav > .open > a:hover, 
+    .color-skin-5 #masthead .navbar-nav > .open > a:focus {
+        color: #16a085;
+    }
+    .color-skin-5 #masthead .navbar-nav > .active > a, 
+    .color-skin-5 #masthead .navbar-nav > .active > a:hover, 
+    .color-skin-5 #masthead .navbar-nav > .active > a:focus,
+    .color-skin-5 #masthead .navbar-nav > .current-menu-parent > a, 
+    .color-skin-5 #masthead .navbar-nav > .current-menu-parent > a:hover, 
+    .color-skin-5 #masthead .navbar-nav > .current-menu-parent > a:focus,
+    .color-skin-5 #masthead.affix .navbar-nav > .active > a, 
+    .color-skin-5 #masthead.affix .navbar-nav > .active > a:hover, 
+    .color-skin-5 #masthead.affix .navbar-nav > .active > a:focus,
+    .color-skin-5 #masthead .navbar-nav > .active > a:after,
+    .color-skin-5 #masthead .navbar-nav > .current-menu-parent > a:after {
+        border-bottom-color: #16a085;
+    }
+    
+    
+    .color-skin-5 #masthead .navbar-nav > li .dropdown-menu {
+        border-top-color: #16a085;
+    }
+    .color-skin-5 #masthead .dropdown-menu > .active > a, 
+    .color-skin-5 #masthead .dropdown-menu > .active > a:hover, 
+    .color-skin-5 #masthead .dropdown-menu > .active > a:focus, 
+    .color-skin-5 #masthead .dropdown-menu > li > a:hover, 
+    .color-skin-5 #masthead .dropdown-menu > li > a:focus {
+        background-color: #16a085;
+        border-color: #16a085;
+    }
+}
