@@ -12,25 +12,6 @@
 
 <?php $show_breadcrumbs = rwmb_meta( 'rt_breadcrumbs_option' ); ?>
 <?php $layout_option = rwmb_meta( 'rt_layout_option' ); ?>
-<?php if ( empty($show_breadcrumbs) ) { ?>
-<header class="archive-header">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6">
-                <h1 class="archive-title"><?php _e( 'Blog', 'retouch' ); ?></h1>
-            </div>
-            <!-- /.col-sm-6 -->
-            <div class="col-xs-6 hidden-xs">
-                <?php if ( function_exists( 'breadcrumb_trail' ) ) breadcrumb_trail( array( 'labels' => array( 'browse' => __( 'You are here:', 'retouch' ) ) ) ); ?>
-            </div>
-            <!-- /.col-xs-6 -->
-        </div>
-        <!-- /.row -->
-    </div>
-    <!-- /.container -->
-</header>
-<!-- .archive-header -->
-<?php } ?>
 <div id="main" class="wrapper">
     <div class="container">
         <div class="row">

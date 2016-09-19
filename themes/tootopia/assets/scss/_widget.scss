@@ -1,0 +1,23 @@
+/* Widget
+ * -------------------------- */
+.widget {
+    overflow: hidden;
+    background-color: $white;
+    margin-bottom: 25px;
+    padding: 30px 20px;
+}
+
+.widget p:last-child {
+    margin-bottom: 0;
+}
+
+.widget-title {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    line-height: 20px;
+    border-left: 3px solid $primary-color;
+}
+

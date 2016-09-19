@@ -15,34 +15,25 @@
      */
     get_header();
 ?>
-<header class="archive-header">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6">
-                <h1 class="archive-title"><?php _e( 'Blog', 'retouch' ); ?></h1>
-            </div>
-            <!-- /.col-sm-6 -->
-            <div class="col-xs-6 hidden-xs">
-                <?php if ( function_exists( 'breadcrumb_trail' ) ) breadcrumb_trail( array( 'labels' => array( 'browse' => __( 'You are here:', 'retouch' ) ) ) ); ?>
-            </div>
-            <!-- /.col-xs-6 -->
-        </div>
-        <!-- /.row -->
-    </div>
-    <!-- /.container -->
-</header>
 <!-- .archive-header -->
 <div id="main" class="wrapper">
     <div class="container">
         <div class="row">
             <div class="col-md-8">
                 <div id="primary" class="site-content">
+                    
+                    <?php putRevSlider( "home_slide" ) ?>
+
                     <div id="content" role="main">
 
                         <?php if ( have_posts() ) : ?>
                         <?php /* Start the Loop */ ?>
                         <?php while ( have_posts() ) : the_post(); ?>
+                        
+                        <div class="col-xs-12 col-md-6 col-lg-4 article-wrap isotope-item" >
                         <?php get_template_part( 'content', get_post_format() ); ?>
+                        </div>
+    
                         <?php endwhile; ?>
                         <?php retouch_content_nav( 'nav-below' ); ?>
                         <?php else : ?>

@@ -1,0 +1,72 @@
+/* Default CSS
+ * -------------------------- */
+body {
+    background-color: $light-gray;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: $gray-black;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: $black;
+}
+
+iframe {
+    border: 0;
+}
+
+input, button, select, textarea {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    color: $anchor-color;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+a:hover, a:focus {
+    color: $anchor-color-hover;
+    text-decoration: none;
+}
+
+a:focus {
+    outline: none;
+}
+
+::selection {
+    background-color: #f1c40f;
+    color: #ffffff;
+}
+
+::-moz-selection {
+    background-color: #f1c40f;
+    color: #ffffff;
+}
+
+.widget_calendar caption {
+    background-color: #2ecc71;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+#content {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+@media (min-width: $breakpoints-xlarge) {
+    .container {
+        width: 1150px;
+    }
+}
+
+@media (min-width: $breakpoints-xxlarge) {
+    .container {
+        width: 1300px;
+    }
+}

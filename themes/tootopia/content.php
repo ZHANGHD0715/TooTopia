@@ -32,13 +32,6 @@
         <div class="entry-summary">
             <?php the_excerpt(); ?>
         </div>
-        <!-- .entry-summary -->
-        <?php else : ?>
-        <div class="entry-content">
-            <?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'retouch' ) ); ?>
-            <?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'retouch' ), 'after' => '</div>' ) ); ?>
-        </div>
-        <!-- .entry-content -->
         <?php endif; ?>
         <footer class="entry-meta">
             <?php retouch_entry_meta(); ?>
