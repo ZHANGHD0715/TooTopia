@@ -256,6 +256,8 @@
         wp_register_script( 'isotope', get_template_directory_uri() . '/assets/js/jquery.isotope.min.js', array( 'jquery' ), '1.0.0');
         wp_register_script( 'FitVids', get_template_directory_uri() . '/assets/js/jquery.fitvids.js', array(), '1.0.0', true ); 
         wp_register_script( 'custom-script', get_template_directory_uri() . '/assets/js/custom-script.js', array(), '1.0.0', true ); 
+
+        wp_register_script( 'main', get_template_directory_uri() . '/assets/javascript/main.js', array(), '1.0.0', true ); 
     
         // Loads Bootstrap JS & Other JavaScript Plugins  
         wp_enqueue_script( 'bootstrap' ); 
@@ -267,6 +269,7 @@
         wp_enqueue_script( 'isotope' );
         wp_enqueue_script( 'FitVids' );
         wp_enqueue_script( 'custom-script' );
+
         $font_url = retouch_get_font_url();
         if ( ! empty( $font_url ) )
             wp_enqueue_style( 'retouch-fonts', esc_url_raw( $font_url ), array(), null );
@@ -276,6 +279,7 @@
         wp_register_style( 'UItoTop', get_template_directory_uri() . '/assets/UItoTop/css/ui.totop.css', array(), '3.0.0', 'all' ); 
         wp_register_style( 'tp_twitter_plugin_css', get_template_directory_uri() . '/assets/recent-tweets-widget/tp_twitter_plugin.css', array(), '1.0', 'screen' ); 
         wp_register_style( 'skins', get_template_directory_uri() . '/assets/css/skins.css', array(), '3.0.0', 'all' ); 
+        wp_register_style( 'retouch-style', get_template_directory_uri() . '/assets/stylesheets/main.css', array(), '3.0.0', 'all' ); 
         // Loads Bootstrap CSS & Other Stylesheets
         wp_enqueue_style( 'bootstrap' );
         wp_enqueue_style( 'prettyPhoto' );
@@ -286,7 +290,7 @@
         // Loads Font Awesome stylesheet.
         wp_enqueue_style( 'font-awesome' );
         // Loads our main stylesheet.
-        wp_enqueue_style( 'retouch-style', get_stylesheet_uri() );
+        // wp_enqueue_style( 'retouch-style', get_stylesheet_uri() );
         wp_enqueue_style( 'skins' );
         // Loads the Internet Explorer specific stylesheet.
         wp_enqueue_style( 'retouch-ie', get_template_directory_uri() . '/css/ie.css', array( 'retouch-style' ), '20121010' );
