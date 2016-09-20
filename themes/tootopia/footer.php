@@ -27,15 +27,14 @@
                 <div class="row">
                     <div class="col-xs-12 col-sm-6">
                         <div class="site-info">
-			<?php do_action( 'retouch_credits' ); ?>
+			                <?php do_action( 'retouch_credits' ); ?>
                             <?php $footer_text = stripslashes($data['footer_text']); ?>
                             <?php if (empty($footer_text)) { ?>
-                                <a href="<?php echo esc_url( __( 'http://wordpress.org/', 'retouch' ) ); ?>" title="<?php esc_attr_e( 'Semantic Personal Publishing Platform', 'retouch' ); ?>"><?php printf( __( 'Proudly powered by %s', 'retouch' ), 'WordPress' ); ?></a>
+                                Coryright &copy;2016 破土网 版权所有
                             <?php } else{ ?>
                                 <?php echo do_shortcode( $footer_text ); ?>
                             <?php } ?>
-			
-		</div><!-- .site-info -->
+		                </div><!-- .site-info -->
                     </div>
                     <div class="col-xs-12 col-sm-6">
                         <?php wp_nav_menu( array( 'theme_location' => 'secondary', 'menu_class' => 'nav-menu', 'depth' => 1 ) ); ?>

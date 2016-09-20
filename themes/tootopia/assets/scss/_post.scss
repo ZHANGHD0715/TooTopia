@@ -26,10 +26,15 @@ blockquote {
     padding: 25px 0;
 }
 
+.home {
+    .entry-wrap {
+        background-color: $white;
+    }
+}
+
 .entry-wrap {
     position: relative;
     padding: 25px;
-    background-color: $white;
 }
 
 article {

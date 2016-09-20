@@ -53,7 +53,8 @@ $white: #fff;
 $primary-color: #af8e4f;
 
 $breakpoints-small: 0;
-$breakpoints-medium: 640;
+$breakpoints-medium-max: 767px;
+$breakpoints-medium: 768px;
 $breakpoints-large: 1024px;
 $breakpoints-xlarge: 1200px;
 $breakpoints-xxlarge: 1440px;
