@@ -1,0 +1,15 @@
+.panel {
+	@include white-background;
+}
+
+.padding-panel {
+	@extend .panel;
+	padding: 30px 20px;
+}
+
+.home {
+    #content {
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+}

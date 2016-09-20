@@ -10,14 +10,18 @@
      */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
     <div class="entry-wrap">
-        <?php if ( has_post_thumbnail() ) { ?>
+        
+        <!-- thumbnail -->
+        <?php if ( !is_single() && has_post_thumbnail() ) { ?>
         <div class="entry-thumb">
             <?php $post_thumbnail_src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'landscape-medium' ); ?>
             <img src="<?php echo $post_thumbnail_src[0]; ?>" class="img-responsive" alt="">
         </div>
         <?php } ?>
+
+        <!-- title     -->
         <header class="entry-header">
             <?php if ( is_single() ) : ?>
             <h1 class="entry-title"><?php the_title(); ?></h1>
@@ -28,14 +32,25 @@
             <?php endif; // is_single() ?>
         </header>
         <!-- .entry-header -->
+        
         <?php if ( is_search() ) : // Only display Excerpts for Search ?>
         <div class="entry-summary">
             <?php the_excerpt(); ?>
         </div>
         <?php endif; ?>
+            
+        <?php if ( is_single() ) { ?>    
+        <div class="entry-content">
+            <?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'retouch' ) ); ?>
+            <?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'retouch' ), 'after' => '</div>' ) ); ?>
+        </div>
+        <?php } ?>
+        <!-- .entry-content -->
+        
         <footer class="entry-meta">
             <?php retouch_entry_meta(); ?>
         </footer>
+        
         <!-- .entry-meta -->
     </div>
     <!-- .entry-wrap -->

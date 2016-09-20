@@ -28,7 +28,7 @@ blockquote {
 
 .home {
     .entry-wrap {
-        background-color: $white;
+        @extend .panel;
     }
 }
 
@@ -39,6 +39,12 @@ blockquote {
 
 article {
     padding: 25px 0;
+}
+
+.single {
+    article {
+        @extend .panel;
+    }   
 }
 
 .entry-content, .entry-summary {
