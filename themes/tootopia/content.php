@@ -32,7 +32,7 @@
             <?php endif; // is_single() ?>
         </header>
         <!-- .entry-header -->
-        
+
         <?php if ( is_search() ) : // Only display Excerpts for Search ?>
         <div class="entry-summary">
             <?php the_excerpt(); ?>

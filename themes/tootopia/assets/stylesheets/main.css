@@ -56,7 +56,7 @@ a:focus {
   .container {
     width: 1300px; } }
 
-.panel, .padding-panel, .home .entry-wrap, .single article {
+.panel, .padding-panel, .single article {
   background-color: #fff; }
 
 .padding-panel {
@@ -549,16 +549,16 @@ p.comment-form-comment {
 
 /* Collapse
  * -------------------------- */
-.panel-group .panel, .panel-group .padding-panel, .panel-group .home .entry-wrap, .home .panel-group .entry-wrap, .panel-group .single article, .single .panel-group article {
+.panel-group .panel, .panel-group .padding-panel, .panel-group .single article, .single .panel-group article {
   position: relative; }
 
-.panel-group .panel .panel-title .accordion-toggle:before, .panel-group .padding-panel .panel-title .accordion-toggle:before, .panel-group .home .entry-wrap .panel-title .accordion-toggle:before, .home .panel-group .entry-wrap .panel-title .accordion-toggle:before, .panel-group .single article .panel-title .accordion-toggle:before, .single .panel-group article .panel-title .accordion-toggle:before, .panel-group .panel .panel-title .accordion-toggle.collapsed:before, .panel-group .padding-panel .panel-title .accordion-toggle.collapsed:before, .panel-group .home .entry-wrap .panel-title .accordion-toggle.collapsed:before, .home .panel-group .entry-wrap .panel-title .accordion-toggle.collapsed:before, .panel-group .single article .panel-title .accordion-toggle.collapsed:before, .single .panel-group article .panel-title .accordion-toggle.collapsed:before {
+.panel-group .panel .panel-title .accordion-toggle:before, .panel-group .padding-panel .panel-title .accordion-toggle:before, .panel-group .single article .panel-title .accordion-toggle:before, .single .panel-group article .panel-title .accordion-toggle:before, .panel-group .panel .panel-title .accordion-toggle.collapsed:before, .panel-group .padding-panel .panel-title .accordion-toggle.collapsed:before, .panel-group .single article .panel-title .accordion-toggle.collapsed:before, .single .panel-group article .panel-title .accordion-toggle.collapsed:before {
   font-family: FontAwesome;
   content: "\f068";
   font-size: 13px;
   margin-right: 10px; }
 
-.panel-group .panel .panel-title .accordion-toggle.collapsed:before, .panel-group .padding-panel .panel-title .accordion-toggle.collapsed:before, .panel-group .home .entry-wrap .panel-title .accordion-toggle.collapsed:before, .home .panel-group .entry-wrap .panel-title .accordion-toggle.collapsed:before, .panel-group .single article .panel-title .accordion-toggle.collapsed:before, .single .panel-group article .panel-title .accordion-toggle.collapsed:before {
+.panel-group .panel .panel-title .accordion-toggle.collapsed:before, .panel-group .padding-panel .panel-title .accordion-toggle.collapsed:before, .panel-group .single article .panel-title .accordion-toggle.collapsed:before, .single .panel-group article .panel-title .accordion-toggle.collapsed:before {
   content: "\f067"; }
 
 /* Tabs

@@ -26,12 +26,6 @@ blockquote {
     padding: 25px 0;
 }
 
-.home {
-    .entry-wrap {
-        @extend .panel;
-    }
-}
-
 .entry-wrap {
     position: relative;
     padding: 25px;

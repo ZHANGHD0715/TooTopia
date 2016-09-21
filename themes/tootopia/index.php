@@ -31,7 +31,7 @@
                         <?php while ( have_posts() ) : the_post(); ?>
                         
                         <div class="col-xs-12 col-md-6 col-lg-4 article-wrap isotope-item" >
-                        <?php get_template_part( 'content', get_post_format() ); ?>
+                        <?php get_template_part( 'template-parts/content', 'teaser' ); ?>
                         </div>
     
                         <?php endwhile; ?>
