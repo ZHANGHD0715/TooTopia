@@ -37,6 +37,10 @@ gulp.task('sass', function() {
   .pipe($.sass({
     errLogToConsole: true
   }))
+  .on('error', $.notify.onError({
+      message: "<%= error.message %>",
+      title: "Sass Error"
+  }))
   .pipe($.autoprefixer({
       browsers: COMPATIBILITY
     }))

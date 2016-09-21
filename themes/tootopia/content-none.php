@@ -9,9 +9,9 @@
 ?>
 <article id="post-0" class="post no-results not-found">
     <header class="entry-header">
-        <h1 class="entry-title"><?php _e( 'Nothing Found', 'retouch' ); ?></h1>
+        <h1 class="entry-title"><?php _e( '暂无内容', 'retouch' ); ?></h1>
     </header>
     <div class="entry-content">
-        <p><?php _e( 'Apologies, but no results were found.', 'retouch' ); ?></p>
+        <p><?php _e( '非常抱歉，我们没有找到您想要的内容。', 'retouch' ); ?></p>
     </div><!-- .entry-content -->
 </article><!-- #post-0 -->

@@ -277,7 +277,6 @@
         wp_register_style( 'bootstrap', get_template_directory_uri() . '/assets/bootstrap/css/bootstrap.css', array(), '3.0.0', 'all' ); 
         wp_register_style( 'prettyPhoto', get_template_directory_uri() . '/assets/prettyPhoto/css/prettyPhoto.css', array(), '3.0.0', 'all' ); 
         wp_register_style( 'UItoTop', get_template_directory_uri() . '/assets/UItoTop/css/ui.totop.css', array(), '3.0.0', 'all' ); 
-        wp_register_style( 'tp_twitter_plugin_css', get_template_directory_uri() . '/assets/recent-tweets-widget/tp_twitter_plugin.css', array(), '1.0', 'screen' ); 
         wp_register_style( 'skins', get_template_directory_uri() . '/assets/css/skins.css', array(), '3.0.0', 'all' ); 
         wp_register_style( 'retouch-style', get_template_directory_uri() . '/assets/stylesheets/main.css', array(), '3.0.0', 'all' ); 
         // Loads Bootstrap CSS & Other Stylesheets

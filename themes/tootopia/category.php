@@ -37,21 +37,20 @@
     <section id="primary" class="site-content">
         <div id="content" role="main">
             <div class="container">
-                <div class="row">
-                    <?php if ( have_posts() ) : ?>
+                <?php if ( have_posts() ) : ?>
+                    <div class="row">
+                        <?php while ( have_posts() ) : the_post(); ?>
+                        
+                        <div class="col-xs-12 col-md-4 col-lg-3 article-wrap isotope-item" >
+                        <?php get_template_part( 'template-parts/content', 'teaser' ); ?>
+                        </div>
 
-                    <?php while ( have_posts() ) : the_post(); ?>
-                    
-                    <div class="col-xs-12 col-md-4 col-lg-3 article-wrap isotope-item" >
-                    <?php get_template_part( 'template-parts/content', 'teaser' ); ?>
+                        <?php endwhile; ?>
+                        <?php retouch_content_nav( 'nav-below' ); ?>
                     </div>
-
-                    <?php endwhile; ?>
-                    <?php retouch_content_nav( 'nav-below' ); ?>
-
-                    <?php else : ?>
+                <?php else : ?>
                     <?php get_template_part( 'content', 'none' ); ?>
-                    <?php endif; ?>
+                <?php endif; ?>
                 </div>
             </div>
         </div><!-- #content -->

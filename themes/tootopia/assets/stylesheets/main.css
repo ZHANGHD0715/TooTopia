@@ -518,24 +518,6 @@ p.comment-form-comment {
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
 
-/* Page Title
- * -------------------------- */
-.archive-header {
-  padding: 45px 0;
-  -webkit-box-shadow: 0 0 1px #ecf0f1;
-          box-shadow: 0 0 1px #ecf0f1;
-  border-bottom: 1px solid #ecf0f1; }
-
-.archive-header .archive-title {
-  text-transform: uppercase;
-  margin: 0;
-  color: #1a1a1a;
-  font-size: 18px; }
-
-.archive-header .breadcrumbs {
-  font-weight: 400;
-  text-align: right; }
-
 /* Panel
  * -------------------------- */
 .panel-title {
@@ -2326,5 +2308,23 @@ a.comment-reply-link > span {
 .commentlist .children > li.bypostauthor {
   background: #ecf0f1;
   border-color: #d3d3d3; }
+
+/* Page Title
+ * -------------------------- */
+.archive-header {
+  padding: 35px 0;
+  -webkit-box-shadow: 0 0 1px #cacaca;
+          box-shadow: 0 0 1px #cacaca;
+  border-bottom: 1px solid #cacaca; }
+
+.archive-header .archive-title {
+  text-transform: uppercase;
+  margin: 0;
+  color: #1a1a1a;
+  font-size: 22px; }
+
+.archive-header .breadcrumbs {
+  font-weight: 400;
+  text-align: right; }
 
 /*# sourceMappingURL=main.css.map */
