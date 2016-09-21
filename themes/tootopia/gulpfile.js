@@ -43,7 +43,7 @@ gulp.task('sass', function() {
   }))
   .pipe($.autoprefixer({
       browsers: COMPATIBILITY
-    }))
+  }))
   .pipe($.if(isProduction, cleanCSS()))
   .pipe($.if(!isProduction, $.sourcemaps.write('.')))
   .pipe(gulp.dest('assets/stylesheets'))
@@ -86,7 +86,7 @@ gulp.task('browser-sync', function() {
 });
 
 
-gulp.task('default', ['sass'], function(){
+gulp.task('default', ['browser-sync', 'sass'], function(){
 
   // Sass Watch
   gulp.watch(['assets/scss/**/*.scss'], ['sass']);

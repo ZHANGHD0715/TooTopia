@@ -25,7 +25,7 @@
         <div id="footer-2" class="footer-2">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-6">
+                    <div class="col-xs-12 col-sm-5">
                         <div class="site-info">
 			                <?php do_action( 'retouch_credits' ); ?>
                             <?php $footer_text = stripslashes($data['footer_text']); ?>
@@ -36,7 +36,7 @@
                             <?php } ?>
 		                </div><!-- .site-info -->
                     </div>
-                    <div class="col-xs-12 col-sm-6">
+                    <div class="col-xs-12 col-sm-7">
                         <?php wp_nav_menu( array( 'theme_location' => 'secondary', 'menu_class' => 'nav-menu', 'depth' => 1 ) ); ?>
                     </div>
                 </div>

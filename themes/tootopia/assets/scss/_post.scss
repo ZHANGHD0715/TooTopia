@@ -38,11 +38,20 @@ article {
 .single {
     article {
         @extend .panel;
-    }   
+    }
+
+    .entry-title {
+        font-size: 30px;
+    }
 }
 
 .entry-content, .entry-summary {
-    padding: 10px 0;
+    padding: 30px 0;
+
+    p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
 }
 
 .entry-thumb {
@@ -130,11 +139,10 @@ article {
 }
 
 .entry-title {
-    margin: 0;
+    margin: 0 0 20px;
     position: relative;
     font-size: 20px;
     text-transform: uppercase;
-    margin-bottom: 10px;
 }
 
 .post-meta {
