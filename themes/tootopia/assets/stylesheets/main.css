@@ -1761,10 +1761,6 @@ address {
 
 /* Masthead
  * -------------------------- */
-#masthead.affix {
-  width: 100%;
-  z-index: 999; }
-
 #masthead .navbar {
   min-height: 100px;
   border: 0;
@@ -1777,6 +1773,12 @@ address {
 
 #masthead.affix .navbar.navbar-default {
   background-color: rgba(44, 62, 80, 0.9); }
+
+#masthead.fixedHeader {
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  top: 0; }
 
 #masthead .navbar-brand {
   font-size: 24px;
