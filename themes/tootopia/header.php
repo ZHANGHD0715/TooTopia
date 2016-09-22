@@ -77,7 +77,7 @@
                             );
                         ?>
 
-                        <div class="navbar-right" style="font-size: 30px;">
+                        <div class="navbar-right" style="font-size: 20px;">
                             <i class="fa fa-search" aria-hidden="true"></i>
                         </div>
                     </div><!-- /.container -->
