@@ -537,38 +537,14 @@
             );
         
             // Translators: 1 is category, 2 is tag, 3 is the date and 4 is the author's name.
-            if ( $tag_list ) {
     ?>
-    <span class="post-date"><i class="fa fa-clock-o"></i> <?php echo $date ?></span>
-    <span class="post-author"><span class="glyphicon glyphicon-user"></span> <?php echo $author ?></span>
+    
+    <?php if ( $categories_list ) { ?>
     <span class="post-cats"><i class="fa fa-th-list"></i> <?php echo $categories_list ?></span>
-    <span class="post-taxs"><i class="fa fa-tags"></i> <?php echo $tag_list ?></span>
-    <?php if ( comments_open() ) : ?>
-    <span class="comments-link">
-        <span class="glyphicon glyphicon-comment"></span> <?php comments_popup_link( '<span class="leave-reply">' . __( 'Leave a reply', 'retouch' ) . '</span>', __( '1 Reply', 'retouch' ), __( '% Replies', 'retouch' ) ); ?>
-    </span><!-- .comments-link -->
-    <?php endif; // comments_open() ?>
-    <?php if ( current_user_can('edit_post') ) { ?>
-    <?php edit_post_link( __( 'Edit', 'retouch' ), '<span class="edit-link"><i class="fa fa-pencil"></i> ', '</span>' ); ?>
     <?php } ?>
-    <?php } elseif ( $categories_list ) { ?>
-
-    <span class="post-cats"><i class="fa fa-th-list"></i> <?php echo $categories_list ?></span>
     <span class="post-date"><i class="fa fa-clock-o"></i> <?php echo $date ?></span>
     
-    <?php } else { ?>
-    <span class="post-date"><i class="fa fa-clock-o"></i> <?php echo $date ?></span>
-    <span class="post-author"><span class="glyphicon glyphicon-user"></span> <?php echo $author ?></span>
-    <?php if ( comments_open() ) : ?>
-    <span class="comments-link">
-        <span class="glyphicon glyphicon-comment"></span> <?php comments_popup_link( '<span class="leave-reply">' . __( 'Leave a reply', 'retouch' ) . '</span>', __( '1 Reply', 'retouch' ), __( '% Replies', 'retouch' ) ); ?>
-    </span><!-- .comments-link -->
-    <?php endif; // comments_open() ?>
-    <?php if ( current_user_can('edit_post') ) { ?>
-    <?php edit_post_link( __( 'Edit', 'retouch' ), '<span class="edit-link"><i class="fa fa-pencil"></i> ', '</span>' ); ?>
-    <?php } ?>
     <?php
-         }
         }
         endif;
         /**

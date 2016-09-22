@@ -66,6 +66,7 @@
                             <?php endif; // end current_user_can() check ?>
                         </article><!-- #post-0 -->
                         <?php endif; // end have_posts() check ?>
+
                     </div><!-- #content -->
                 </div><!-- #primary -->
             </div>
