@@ -127,17 +127,6 @@ article {
     font-size: 11px;
 }
 
-.entry-title:before {
-    content: "";
-    width: 50px;
-    height: 1px;
-    background-color: #ecf0f1;
-    display: block;
-    position: absolute;
-    bottom: -10px;
-    left: 0;
-}
-
 .entry-title {
     margin: 0 0 20px;
     position: relative;
@@ -154,6 +143,21 @@ article {
 
 .entry-meta .post-date, .entry-meta .post-author, .entry-meta .post-cats, .entry-meta .post-taxs, .entry-meta .comments-link, .entry-meta .edit-link, .entry-meta .post-format {
     margin-right: 10px;
+}
+
+.entry-meta .post-cats {
+    float: left;
+    i, a {
+        color: $primary-color;
+    }
+}
+
+.entry-meta .post-date {
+    margin-right: 0;
+    float: right;
+    i, a {
+        @extend .text-date;
+    }
 }
 
 .colored-wrapper .post-meta {
@@ -197,4 +201,8 @@ article {
         float: none;
         border-bottom: 0;
     }
+}
+
+.text-date {
+    color: $dark-gray;
 }

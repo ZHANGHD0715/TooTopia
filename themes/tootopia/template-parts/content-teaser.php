@@ -47,7 +47,7 @@
         <?php } ?>
         <!-- .entry-content -->
         
-        <footer class="entry-meta">
+        <footer class="entry-meta clearfix">
             <?php retouch_entry_meta(); ?>
         </footer>
         

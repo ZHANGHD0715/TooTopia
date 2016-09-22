@@ -1,0 +1,51 @@
+/* Categories
+ * -------------------------- */
+.widget_categories ul, .widget_archive ul, .widget_nav_menu ul:not(.sub-menu), .widget_pages ul, .widget_meta ul, .widget_recent_comments ul, .widget_recent_entries ul, .widget_rss ul {
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 0;
+}
+
+#footer-1 .widget-list {
+    padding: 0;
+    border: 0;
+}
+
+.widget_categories ul > li, .widget_archive ul > li, .widget_nav_menu ul:not(.sub-menu) > li, .widget_pages ul > li, .widget_meta ul > li, .widget_recent_comments ul > li, .widget_recent_entries ul > li, .widget_rss ul > li {
+    position: relative;
+    margin-bottom: 16px;
+
+    .widget-entry-thumb-wrapper {
+        padding-right: 5px;
+    }
+
+    .widget-entry-summary-wrapper {
+        a {
+            font-size: 16px;
+        }
+    }
+
+    .widget-post-date {
+        margin-top: 5px;
+    }
+}
+
+.widget_rss ul > li {
+    padding-left: 0;
+}
+
+#footer-1 .widget-list > li:last-child {
+    padding-bottom: 0;
+}
+
+#footer-1 .widget-list > li:first-child {
+    padding-top: 0;
+}
+
+.widget_categories ul > li:last-child, .widget_archive ul > li:last-child, .widget_nav_menu ul:not(.sub-menu) > li:last-child, .widget_pages ul > li:last-child, .widget_meta ul > li:last-child, .widget_recent_comments ul > li:last-child, .widget_recent_entries ul > li:last-child, .widget_rss ul > li:last-child {
+    border-bottom: 0;
+}
+
+#footer-1 .widget-list > li {
+    border-color: rgba(255, 255, 255, 0.1);
+}

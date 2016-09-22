@@ -5,6 +5,10 @@
     background-color: $white;
     margin-bottom: 25px;
     padding: 30px 20px;
+
+    &.widget-full-wrapper {
+        padding: 0;        
+    }
 }
 
 .widget p:last-child {
@@ -15,7 +19,7 @@
     font-size: 20px;
     text-transform: uppercase;
     margin: 0;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     padding-left: 10px;
     line-height: 20px;
     border-left: 3px solid $primary-color;
