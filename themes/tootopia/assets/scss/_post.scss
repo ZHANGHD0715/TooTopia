@@ -1,26 +1,5 @@
 /* Post
  * -------------------------- */
-.caroufredsel-posts {
-    padding-top: 25px;
-}
-
-.caroufredsel-posts .subpage-title {
-    padding-bottom: 0;
-}
-
-.article-wrap {
-    margin-right: -1px;
-}
-
-article.format-status .entry-content p {
-    font-size: 18px;
-}
-
-blockquote {
-    padding: 0;
-    padding-left: 20px;
-    border-left: 15px double #ecf0f1;
-}
 
 .post-wrapper {
     padding: 25px 0;
@@ -35,14 +14,8 @@ article {
     padding: 0;
 }
 
-.single {
-    article {
-        @extend .panel;
-    }
-
-    .entry-title {
-        font-size: 30px;
-    }
+article.format-status .entry-content p {
+    font-size: 18px;
 }
 
 .entry-content, .entry-summary {
@@ -115,22 +88,11 @@ article {
     border-top: 0;
 }
 
-.caroufredsel-posts .entry-title {
-    font-size: 15px;
-    text-transform: none;
-    margin-bottom: 20px;
-}
-
-.caroufredsel-posts .post-meta {
-    text-transform: uppercase;
-    font-weight: 400;
-    font-size: 11px;
-}
-
 .entry-title {
     margin: 0 0 10px;
     position: relative;
     font-size: 16px;
+    font-weight: normal;
 }
 
 .post-meta {
@@ -184,6 +146,12 @@ article {
 
 .text-date {
     color: $dark-gray;
+}
+
+blockquote {
+    padding: 0;
+    padding-left: 20px;
+    border-left: 15px double #ecf0f1;
 }
 
 @media (max-width: $breakpoints-medium-max) {

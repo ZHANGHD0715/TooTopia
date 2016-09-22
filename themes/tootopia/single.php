@@ -15,7 +15,7 @@
 <div id="main" class="wrapper">
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-8 <?php echo ( $layout_option == 'left-sidebar' ) ? 'pull-right' : 'pull-left'; ?>">
+            <div class="col-sm-12 col-md-8 <?php echo ( $layout_option == 'left-sidebar' ) ? 'pull-right' : 'pull-left'; ?>">
                 <section id="primary" class="site-content">
                     <div id="content" role="main">
                         <?php while ( have_posts() ) : the_post(); ?>
@@ -38,7 +38,7 @@
                 </section>
                 <!-- #primary -->
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 <?php echo ( $layout_option == 'left-sidebar' ) ? 'pull-left' : 'pull-right'; ?>">
+            <div class="col-sm-12 col-md-4 <?php echo ( $layout_option == 'left-sidebar' ) ? 'pull-left' : 'pull-right'; ?>">
                 <?php get_sidebar(); ?>
             </div>
         </div>

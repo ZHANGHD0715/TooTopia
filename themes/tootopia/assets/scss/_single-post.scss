@@ -1,0 +1,49 @@
+/* Single Post
+ * -------------------------- */
+
+.single {
+    article {
+        @extend .panel;
+    }
+
+    .entry-wrap {
+        padding: 50px 30px 50px;
+    }
+
+    .post-categories {
+        list-style-type: none;
+        padding-left: 0;
+        margin-bottom: 30px;
+        li {
+            padding-right: 10px;
+        }
+        a {
+            color: $primary-color;
+            font-size: 16px;
+        }
+    }
+
+    .entry-title {
+        font-size: 30px;
+    }
+    
+    .entry-meta-single {
+        font-size: 14px;
+        color: $dark-gray;
+        margin: 30px 0 10px;
+    }
+
+    .entry-meta-avator {
+        margin-right: 30px;
+        img {
+            margin-right: 5px;
+        }
+    }
+
+    .entry-meta-date {
+        margin-right: 30px;
+        .entry-meta-label {
+            margin-right: 5px;
+        }
+    }
+}

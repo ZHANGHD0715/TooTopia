@@ -76,6 +76,10 @@
                                 'walker'            => new wp_bootstrap_navwalker())
                             );
                         ?>
+
+                        <div class="navbar-right" style="font-size: 30px;">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </div>
                     </div><!-- /.container -->
                 </nav>
                 <!-- /.navbar -->

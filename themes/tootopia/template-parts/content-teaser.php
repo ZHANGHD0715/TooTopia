@@ -15,7 +15,7 @@
         
         <!-- thumbnail -->
         <?php if ( !is_single() && has_post_thumbnail() ) { ?>
-        <div class="entry-thumb">
+        <div class="post-thumb entry-thumb">
             <?php $post_thumbnail_src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'landscape-medium' ); ?>
             <img src="<?php echo $post_thumbnail_src[0]; ?>" class="img-responsive" alt="">
         </div>

@@ -56,7 +56,7 @@ a:focus {
   .container {
     width: 1300px; } }
 
-.panel, .padding-panel, .single article {
+.panel, .padding-panel {
   background-color: #fff; }
 
 .padding-panel {
@@ -532,16 +532,16 @@ p.comment-form-comment {
 
 /* Collapse
  * -------------------------- */
-.panel-group .panel, .panel-group .padding-panel, .panel-group .single article, .single .panel-group article {
+.panel-group .panel, .panel-group .padding-panel {
   position: relative; }
 
-.panel-group .panel .panel-title .accordion-toggle:before, .panel-group .padding-panel .panel-title .accordion-toggle:before, .panel-group .single article .panel-title .accordion-toggle:before, .single .panel-group article .panel-title .accordion-toggle:before, .panel-group .panel .panel-title .accordion-toggle.collapsed:before, .panel-group .padding-panel .panel-title .accordion-toggle.collapsed:before, .panel-group .single article .panel-title .accordion-toggle.collapsed:before, .single .panel-group article .panel-title .accordion-toggle.collapsed:before {
+.panel-group .panel .panel-title .accordion-toggle:before, .panel-group .padding-panel .panel-title .accordion-toggle:before, .panel-group .panel .panel-title .accordion-toggle.collapsed:before, .panel-group .padding-panel .panel-title .accordion-toggle.collapsed:before {
   font-family: FontAwesome;
   content: "\f068";
   font-size: 13px;
   margin-right: 10px; }
 
-.panel-group .panel .panel-title .accordion-toggle.collapsed:before, .panel-group .padding-panel .panel-title .accordion-toggle.collapsed:before, .panel-group .single article .panel-title .accordion-toggle.collapsed:before, .single .panel-group article .panel-title .accordion-toggle.collapsed:before {
+.panel-group .panel .panel-title .accordion-toggle.collapsed:before, .panel-group .padding-panel .panel-title .accordion-toggle.collapsed:before {
   content: "\f067"; }
 
 /* Tabs
@@ -1869,23 +1869,6 @@ address {
 
 /* Post
  * -------------------------- */
-.caroufredsel-posts {
-  padding-top: 25px; }
-
-.caroufredsel-posts .subpage-title {
-  padding-bottom: 0; }
-
-.article-wrap {
-  margin-right: -1px; }
-
-article.format-status .entry-content p {
-  font-size: 18px; }
-
-blockquote {
-  padding: 0;
-  padding-left: 20px;
-  border-left: 15px double #ecf0f1; }
-
 .post-wrapper {
   padding: 25px 0; }
 
@@ -1896,8 +1879,8 @@ blockquote {
 article {
   padding: 0; }
 
-.single .entry-title {
-  font-size: 30px; }
+article.format-status .entry-content p {
+  font-size: 18px; }
 
 .entry-content, .entry-summary {
   padding: 30px 0; }
@@ -1956,20 +1939,11 @@ article {
   border: 1px solid #ecf0f1;
   border-top: 0; }
 
-.caroufredsel-posts .entry-title {
-  font-size: 15px;
-  text-transform: none;
-  margin-bottom: 20px; }
-
-.caroufredsel-posts .post-meta {
-  text-transform: uppercase;
-  font-weight: 400;
-  font-size: 11px; }
-
 .entry-title {
   margin: 0 0 10px;
   position: relative;
-  font-size: 16px; }
+  font-size: 16px;
+  font-weight: normal; }
 
 .post-meta {
   padding: 10px 0;
@@ -2010,6 +1984,11 @@ article {
 
 .text-date, .entry-meta .post-date i, .entry-meta .post-date a {
   color: #999; }
+
+blockquote {
+  padding: 0;
+  padding-left: 20px;
+  border-left: 15px double #ecf0f1; }
 
 @media (max-width: 767px) {
   .post-meta {
@@ -2315,5 +2294,26 @@ a.comment-reply-link > span {
 .archive-header .breadcrumbs {
   font-weight: 400;
   text-align: right; }
+
+.site .avatar {
+  border-radius: 50%; }
+
+/* Caroufredsel
+ * -------------------------- */
+.caroufredsel-posts {
+  padding-top: 25px; }
+
+.caroufredsel-posts .subpage-title {
+  padding-bottom: 0; }
+
+.caroufredsel-posts .entry-title {
+  font-size: 15px;
+  text-transform: none;
+  margin-bottom: 20px; }
+
+.caroufredsel-posts .post-meta {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 11px; }
 
 /*# sourceMappingURL=main.css.map */

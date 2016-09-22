@@ -13,15 +13,11 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
     <div class="entry-wrap">
         
-        <!-- thumbnail -->
-        <?php if ( !is_single() && has_post_thumbnail() ) { ?>
-        <div class="entry-thumb">
-            <?php $post_thumbnail_src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'landscape-medium' ); ?>
-            <img src="<?php echo $post_thumbnail_src[0]; ?>" class="img-responsive" alt="">
+        <div>
+            <?php the_category(); ?>
         </div>
-        <?php } ?>
 
-        <!-- title     -->
+        <!-- title -->
         <header class="entry-header">
             <?php if ( is_single() ) : ?>
             <h1 class="entry-title"><?php the_title(); ?></h1>
@@ -32,6 +28,19 @@
             <?php endif; // is_single() ?>
         </header>
         <!-- .entry-header -->
+
+        <!-- meta information -->
+        <div class="entry-meta-single" >
+            <span class="entry-meta-avator">
+                <?php echo get_avatar( get_the_author_meta('user_email'), $size = '20'); ?>
+                <?php the_author(); ?>
+            </span>
+
+            <span class="entry-meta-date" >
+                <span class="entry-meta-date-label">日期：</span>
+                <?php the_date(); ?>
+            </span>
+        </div>
 
         <?php if ( is_search() ) : // Only display Excerpts for Search ?>
         <div class="entry-summary">
@@ -46,12 +55,13 @@
         </div>
         <?php } ?>
         <!-- .entry-content -->
+
+        <?php if ( the_tags() ) { ?>    
+        <div class="tagcloud">
+            <?php the_tags(); ?>
+        </div>
+        <?php } ?>
         
-        <footer class="entry-meta">
-            <?php retouch_entry_meta(); ?>
-        </footer>
-        
-        <!-- .entry-meta -->
     </div>
     <!-- .entry-wrap -->
     <?php if ( is_singular() && get_the_author_meta( 'description' ) && is_multi_author() ) : // If a user has filled out their description and this is a multi-author blog, show a bio on their entries. ?>
