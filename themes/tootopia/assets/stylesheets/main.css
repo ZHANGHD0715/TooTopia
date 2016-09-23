@@ -1876,10 +1876,12 @@ a:focus {
   margin-top: 30px;
   color: #af8e4f;
   font-size: 16px;
-  border: 1px solid;
+  border: 1px solid rgba(175, 142, 79, 0.7);
   border-radius: 20px;
   padding: 4px 10px;
   cursor: pointer; }
+  .navbar-search:hover {
+    border-color: #af8e4f; }
 
 #masthead #searchform {
   display: none; }

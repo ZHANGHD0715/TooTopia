@@ -41,12 +41,6 @@
                 <?php the_date(); ?>
             </span>
         </div>
-
-        <?php if ( is_search() ) : // Only display Excerpts for Search ?>
-        <div class="entry-summary">
-            <?php the_excerpt(); ?>
-        </div>
-        <?php endif; ?>
             
         <?php if ( is_single() ) { ?>    
         <div class="entry-content">
