@@ -62,6 +62,10 @@
                             </a>
                         </div>
 
+                        <div class="navbar-right navbar-search">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </div>
+                        
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <?php
                             wp_nav_menu( array(
@@ -76,12 +80,13 @@
                                 'walker'            => new wp_bootstrap_navwalker())
                             );
                         ?>
+                        
+                        <!-- search input box -->
+                        <?php get_search_form(); ?>
 
-                        <div class="navbar-right" style="font-size: 20px;">
-                            <i class="fa fa-search" aria-hidden="true"></i>
-                        </div>
                     </div><!-- /.container -->
                 </nav>
                 <!-- /.navbar -->
+
             </header><!-- #masthead -->
    

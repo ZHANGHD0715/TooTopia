@@ -8,5 +8,5 @@
      */
 ?>
 <form method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
-    <input type="text" class="form-control" name="s" id="s" placeholder="<?php esc_attr_e( 'Search', 'retouch' ); ?>" />
+    <input type="text" class="form-control" name="s" id="s" placeholder="<?php esc_attr_e( '请居中光标并搜索关键词', 'retouch' ); ?>" />
 </form>

@@ -2,16 +2,18 @@
 @import "settings";
 @import "mixins";
 
+@import "retouch";
 @import "global";
 @import "layout";
-@import "retouch";
+
 @import "menu";
-@import "post";
+@import "navbar";
 @import "sidebar";
 @import "widget";
-@import "navbar";
-@import "slider";
-@import "comment";
-@import "archive";
 @import "user";
 @import "caroufredsel";
+
+@import "slider";
+@import "post";
+@import "comment";
+@import "archive";
