@@ -11,15 +11,22 @@
     border: 1px solid;
     border-radius: 20px;
     padding: 4px 10px;
+    cursor: pointer;
 }
 
 #masthead #searchform {
+	display: none;
+
 	.form-control {
 		background: linear-gradient(to right, rgba($gray-black, 0), rgba($gray-black, 1), rgba($gray-black, 0));
 		border: none;
 		color: $white;
 		text-align: center;
 		border-top: 1px solid $gray-black;
+
+		&::-webkit-input-placeholder {
+			color: $dark-gray;
+		}
 	}
 
 	&:before {

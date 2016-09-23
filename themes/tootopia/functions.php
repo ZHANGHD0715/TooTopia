@@ -257,6 +257,7 @@
         wp_register_script( 'FitVids', get_template_directory_uri() . '/assets/js/jquery.fitvids.js', array(), '1.0.0', true ); 
         wp_register_script( 'custom-script', get_template_directory_uri() . '/assets/js/custom-script.js', array(), '1.0.0', true ); 
         wp_register_script( 'stickeyHeader', get_template_directory_uri() . '/assets/js/stickeyHeader.js', array(), '1.0.0', true ); 
+        wp_register_script( 'toggleSearchForm', get_template_directory_uri() . '/assets/js/searchFormToggle.js', array(), '1.0.0', true ); 
 
         wp_register_script( 'main', get_template_directory_uri() . '/assets/javascript/main.js', array(), '1.0.0', true ); 
     
@@ -271,6 +272,7 @@
         wp_enqueue_script( 'FitVids' );
         wp_enqueue_script( 'custom-script' );
         wp_enqueue_script( 'stickeyHeader' );
+        wp_enqueue_script( 'toggleSearchForm' );
 
         $font_url = retouch_get_font_url();
         if ( ! empty( $font_url ) )
