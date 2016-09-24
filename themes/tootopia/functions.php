@@ -244,8 +244,6 @@
          */
         if ( is_singular() && comments_open() && get_option( 'thread_comments' ) )
             wp_enqueue_script( 'comment-reply' );
-        // Adds JavaScript for handling the navigation menu hide-and-show behavior.
-        wp_enqueue_script( 'retouch-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '1.0', true );
         // Register Bootstrap JS & Other JavaScript Plugins 
         wp_register_script( 'bootstrap', get_template_directory_uri() . '/assets/bootstrap/js/bootstrap.js', array( 'jquery' ), '3.0.0', true );  
         wp_register_script( 'holder', get_template_directory_uri() . '/assets/js/holder.js', array(), '1.0.0', true ); 
@@ -255,6 +253,7 @@
         wp_register_script( 'carouFredSel', get_template_directory_uri() . '/assets/js/jquery.carouFredSel-6.2.1-packed.js', array( 'jquery' ), '1.0.0'); 
         wp_register_script( 'isotope', get_template_directory_uri() . '/assets/js/jquery.isotope.min.js', array( 'jquery' ), '1.0.0');
         wp_register_script( 'FitVids', get_template_directory_uri() . '/assets/js/jquery.fitvids.js', array(), '1.0.0', true ); 
+        wp_register_script( 'ObjectFitPloyfill', get_template_directory_uri() . '/assets/js/ofi.browser.js', array(), '1.0.0', true ); 
         wp_register_script( 'custom-script', get_template_directory_uri() . '/assets/js/custom-script.js', array(), '1.0.0', true ); 
         wp_register_script( 'stickeyHeader', get_template_directory_uri() . '/assets/js/stickeyHeader.js', array(), '1.0.0', true ); 
         wp_register_script( 'toggleSearchForm', get_template_directory_uri() . '/assets/js/searchFormToggle.js', array(), '1.0.0', true ); 
@@ -270,6 +269,7 @@
         wp_enqueue_script( 'carouFredSel' );
         wp_enqueue_script( 'isotope' );
         wp_enqueue_script( 'FitVids' );
+        wp_enqueue_script( 'ObjectFitPloyfill' );
         wp_enqueue_script( 'custom-script' );
         wp_enqueue_script( 'stickeyHeader' );
         wp_enqueue_script( 'toggleSearchForm' );

@@ -1,26 +1,36 @@
+/**
+ * stickeyheader.js
+ *
+ * Handles header's position to be fixed when scroll.
+ */
+
 "use strict";
 
 +function($) {
 
-	var $window = $(window);
-	var $header = $('#masthead');
-	var $main = $('#main');
-	var fixHeaderClass = 'fixedHeader';
-	var TOP_LENGTH = 350;
+	var $window = $(window),
+	    $header = $('#masthead'),
+	    $main = $('#main'),
+	    fixedHeaderClass = 'fixedHeader',
+	    TOP_LENGTH = 300,
+	    FADE_TIME = 1000;
+
+	if ( !$header ) 
+		return;
 
 	var updateHeader = function () {
 		var scrollTop = $window.scrollTop();
 			
-		if ( scrollTop > TOP_LENGTH && !$header.hasClass(fixHeaderClass) ) {
-			$main.css('margin-top', '100px');
+		if ( scrollTop > TOP_LENGTH && !$header.hasClass(fixedHeaderClass) ) {
+			$main.addClass('has-fixed-header');
 			$header.hide();
-			$header.fadeIn(1000);
-			$header.addClass(fixHeaderClass);
+			$header.fadeIn(FADE_TIME);
+			$header.addClass(fixedHeaderClass);
 
 		} 
 
-		if ( scrollTop <= TOP_LENGTH && $header.hasClass(fixHeaderClass) ) {
-			$main.css('margin-top', '0');
+		if ( scrollTop <= TOP_LENGTH && $header.hasClass(fixedHeaderClass) ) {
+			$main.removeClass('has-fixed-header');
 			$header.removeClass('fixedHeader');
 		}
 	}

@@ -463,16 +463,16 @@ p.comment-form-comment {
 
 /* Collapse
  * -------------------------- */
-.panel-group .panel, .panel-group .padding-panel {
+.panel-group .panel, .panel-group .padding-panel, .panel-group .single article, .single .panel-group article {
   position: relative; }
 
-.panel-group .panel .panel-title .accordion-toggle:before, .panel-group .padding-panel .panel-title .accordion-toggle:before, .panel-group .panel .panel-title .accordion-toggle.collapsed:before, .panel-group .padding-panel .panel-title .accordion-toggle.collapsed:before {
+.panel-group .panel .panel-title .accordion-toggle:before, .panel-group .padding-panel .panel-title .accordion-toggle:before, .panel-group .single article .panel-title .accordion-toggle:before, .single .panel-group article .panel-title .accordion-toggle:before, .panel-group .panel .panel-title .accordion-toggle.collapsed:before, .panel-group .padding-panel .panel-title .accordion-toggle.collapsed:before, .panel-group .single article .panel-title .accordion-toggle.collapsed:before, .single .panel-group article .panel-title .accordion-toggle.collapsed:before {
   font-family: FontAwesome;
   content: "\f068";
   font-size: 13px;
   margin-right: 10px; }
 
-.panel-group .panel .panel-title .accordion-toggle.collapsed:before, .panel-group .padding-panel .panel-title .accordion-toggle.collapsed:before {
+.panel-group .panel .panel-title .accordion-toggle.collapsed:before, .panel-group .padding-panel .panel-title .accordion-toggle.collapsed:before, .panel-group .single article .panel-title .accordion-toggle.collapsed:before, .single .panel-group article .panel-title .accordion-toggle.collapsed:before {
   content: "\f067"; }
 
 /* Tabs
@@ -1697,6 +1697,14 @@ a:focus {
   font-weight: 700;
   color: #ffffff; }
 
+@media (max-width: 767px) {
+  .hidden-in-mobile {
+    display: none; } }
+
+@media (min-width: 768px) {
+  .show-in-mobile {
+    display: none; } }
+
 @media (min-width: 1200px) {
   .container {
     width: 1150px; } }
@@ -1705,7 +1713,7 @@ a:focus {
   .container {
     width: 1300px; } }
 
-.panel, .padding-panel {
+.panel, .padding-panel, .single article {
   background-color: #fff; }
 
 .padding-panel {
@@ -1716,13 +1724,17 @@ a:focus {
   margin-right: -15px;
   margin-left: -15px; }
 
+@media (min-width: 768px) {
+  #main.has-fixed-header {
+    margin-top: 100px; } }
+
 /* Masthead
  * -------------------------- */
 #masthead .navbar {
   min-height: 100px;
   border: 0;
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
   margin-bottom: 0;
   border-radius: 0;
   -webkit-transition: all 0.2s ease;
@@ -1730,12 +1742,6 @@ a:focus {
 
 #masthead.affix .navbar.navbar-default {
   background-color: rgba(44, 62, 80, 0.9); }
-
-#masthead.fixedHeader {
-  position: fixed;
-  width: 100%;
-  z-index: 9999;
-  top: 0; }
 
 #masthead .navbar-brand {
   font-size: 24px;
@@ -1835,7 +1841,7 @@ a:focus {
     margin-right: -15px;
     margin-top: 15px; }
   #masthead .navbar-nav > li > a {
-    padding: 21px 15px;
+    padding: 21px 10px;
     text-transform: uppercase;
     font-size: 14px; }
   #masthead .navbar-nav > li > a:hover,
@@ -1859,7 +1865,16 @@ a:focus {
     margin: 0 auto;
     background-color: #af8e4f;
     -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease; } }
+    transition: all 0.5s ease; }
+  #masthead.fixedHeader {
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    top: 0; }
+    #masthead.fixedHeader .navbar {
+      background-color: rgba(26, 26, 26, 0.8); }
+      #masthead.fixedHeader .navbar:hover {
+        background-color: #1a1a1a; } }
 
 @media (min-width: 1024px) {
   #masthead .navbar-nav > li > a {
@@ -1883,6 +1898,11 @@ a:focus {
   .navbar-search:hover {
     border-color: #af8e4f; }
 
+@media (max-width: 767px) {
+  .navbar-search {
+    margin-top: 36px;
+    border: none; } }
+
 #masthead #searchform {
   display: none; }
   #masthead #searchform .form-control {
@@ -1894,7 +1914,7 @@ a:focus {
     text-align: center;
     border-top: 1px solid #333; }
     #masthead #searchform .form-control::-webkit-input-placeholder {
-      color: #999; }
+      color: #aaa; }
   #masthead #searchform:before {
     display: none; }
 
@@ -2006,7 +2026,6 @@ article.format-status .entry-content p {
 .entry-meta {
   padding: 10px 0;
   text-transform: uppercase;
-  font-weight: 700;
   border-top: 1px solid #ecf0f1; }
 
 .flush .post {
@@ -2014,7 +2033,15 @@ article.format-status .entry-content p {
 
 .post-thumb {
   position: relative;
-  display: block; }
+  display: block;
+  padding-top: 65%;
+  overflow: hidden; }
+  .post-thumb img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
 
 .fallback-im {
   visibility: hidden; }
@@ -2050,7 +2077,7 @@ article.format-status .entry-content p {
   border-top: 0; }
 
 .entry-title {
-  margin: 0 0 10px;
+  margin: 20px 0 10px;
   position: relative;
   font-size: 16px;
   font-weight: normal; }
@@ -2093,7 +2120,7 @@ article.format-status .entry-content p {
   border-left: 0; }
 
 .text-date, .entry-meta .post-date i, .entry-meta .post-date a {
-  color: #999; }
+  color: #aaa; }
 
 blockquote {
   padding: 0;
@@ -2114,8 +2141,41 @@ blockquote {
 
 @media (min-width: 768px) {
   .entry-title {
-    min-height: 42px;
+    min-height: 48px;
     line-height: 1.4; } }
+
+/* Single Post
+ * -------------------------- */
+.single .entry-wrap {
+  padding: 50px 30px 50px; }
+
+.single .post-categories {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 30px; }
+  .single .post-categories li {
+    padding-right: 10px; }
+  .single .post-categories a {
+    color: #af8e4f;
+    font-size: 16px; }
+
+.single .entry-title {
+  font-size: 30px; }
+
+.single .entry-meta-single {
+  font-size: 14px;
+  color: #aaa;
+  margin: 30px 0 10px; }
+
+.single .entry-meta-avator {
+  margin-right: 30px; }
+  .single .entry-meta-avator img {
+    margin-right: 5px; }
+
+.single .entry-meta-date {
+  margin-right: 30px; }
+  .single .entry-meta-date .entry-meta-label {
+    margin-right: 5px; }
 
 /* =Comments
 ----------------------------------------------- */

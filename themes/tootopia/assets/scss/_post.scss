@@ -36,7 +36,6 @@ article.format-status .entry-content p {
 .entry-meta {
     padding: 10px 0;
     text-transform: uppercase;
-    font-weight: 700;
     border-top: 1px solid #ecf0f1;
 }
 
@@ -47,6 +46,16 @@ article.format-status .entry-content p {
 .post-thumb {
     position: relative;
     display: block;
+    padding-top: 65%;
+    overflow: hidden;
+
+    img {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }
 
 .fallback-im {
@@ -89,7 +98,7 @@ article.format-status .entry-content p {
 }
 
 .entry-title {
-    margin: 0 0 10px;
+    margin: 20px 0 10px;
     position: relative;
     font-size: 16px;
     font-weight: normal;
@@ -174,7 +183,7 @@ blockquote {
 
 @media (min-width: $breakpoints-medium) {
     .entry-title {
-        min-height: 42px;
+        min-height: 48px;
         line-height: 1.4;
     }
 }

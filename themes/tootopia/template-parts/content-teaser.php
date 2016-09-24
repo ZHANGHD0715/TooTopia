@@ -14,14 +14,16 @@
     <div class="entry-wrap panel">
         
         <!-- thumbnail -->
-        <?php if ( !is_single() && has_post_thumbnail() ) { ?>
         <div class="post-thumb entry-thumb">
+        <?php if ( has_post_thumbnail() ) { ?>
             <?php $post_thumbnail_src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'landscape-medium' ); ?>
             <img src="<?php echo $post_thumbnail_src[0]; ?>" class="img-responsive" alt="">
-        </div>
+        <?php } else { ?>
+            <img src="<?php bloginfo('template_directory'); ?>/assets/img/post-fallback.png" class="img-responsive" alt="<?php the_title(); ?>" />
         <?php } ?>
+        </div> 
 
-        <!-- title     -->
+        <!-- title -->
         <header class="entry-header">
             <?php if ( is_single() ) : ?>
             <h1 class="entry-title"><?php the_title(); ?></h1>

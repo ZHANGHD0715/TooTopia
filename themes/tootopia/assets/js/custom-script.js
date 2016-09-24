@@ -62,4 +62,7 @@ jQuery(document).ready(function ($) {
         $("body").removeClass("l-wide").addClass("l-boxed retouch-background");
         $(window).resize();
     });
+
+    // Fit Images
+    objectFitImages('img.img-responsive');
 });

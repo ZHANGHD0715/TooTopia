@@ -18,6 +18,13 @@
     }
 }
 
+@media (max-width: $breakpoints-medium-max) {
+    .navbar-search {
+        margin-top: 36px;
+        border: none;
+    }
+}
+
 #masthead #searchform {
 	display: none;
 

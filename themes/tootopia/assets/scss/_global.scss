@@ -54,6 +54,18 @@ a:focus {
     color: #ffffff;
 }
 
+@media (max-width: $breakpoints-medium-max) {
+    .hidden-in-mobile {
+        display: none;
+    }
+}
+
+@media (min-width: $breakpoints-medium) {
+    .show-in-mobile {
+        display: none;
+    }
+}
+
 @media (min-width: $breakpoints-xlarge) {
     .container {
         width: 1150px;

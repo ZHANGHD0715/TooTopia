@@ -36,7 +36,7 @@
         <?php } ?>
         <?php // Loads HTML5 JavaScript file to add support for HTML5 elements in older IE versions. ?>
         <!--[if lt IE 9]>
-            <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
+            <script src="<?php echo get_template_directory_uri(); ?>/assets/js/html5.js" type="text/javascript"></script>
         <![endif]-->
         <?php wp_head(); ?>
     </head>
@@ -47,12 +47,18 @@
                     <div class="container">
                         <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header">
+
                             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                                 <span class="sr-only">Toggle navigation</span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
+                            
+                            <div class="navbar-search pull-right show-in-mobile">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </div>
+
                             <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
                                 <?php if ($media_logo_upload) { ?>
                                 <img alt="<?php bloginfo( 'name' ); ?>" src="<?php echo $media_logo_upload; ?>">
@@ -62,7 +68,7 @@
                             </a>
                         </div>
 
-                        <div class="navbar-right navbar-search">
+                        <div class="navbar-right navbar-search hidden-in-mobile">
                             <i class="fa fa-search" aria-hidden="true"></i>
                         </div>
                         
