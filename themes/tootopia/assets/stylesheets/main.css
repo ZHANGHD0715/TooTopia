@@ -1876,7 +1876,7 @@ a:focus {
       #masthead.fixedHeader .navbar:hover {
         background-color: #1a1a1a; } }
 
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   #masthead .navbar-nav > li > a {
     font-size: 16px; }
   #masthead .navbar-nav > li > a {
@@ -2403,5 +2403,40 @@ a.comment-reply-link > span {
 .archive-header .breadcrumbs {
   font-weight: 400;
   text-align: right; }
+
+/* About Us Page
+ * -------------------------- */
+#about-us > section {
+  padding: 0; }
+
+.about-us_main {
+  padding: 20px 10px 60px; }
+
+.about-us_content {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 16px;
+  line-height: 1.8; }
+
+.about-us_contact {
+  border-top: 1px dashed #af8e4f; }
+
+.about-us_barcode {
+  border: 1px solid #af8e4f;
+  padding: 10px;
+  margin: 30px auto 0;
+  display: block; }
+
+@media (min-width: 992px) {
+  .about-us_main {
+    padding: 20px 100px 30px; }
+  .about-us_content {
+    padding: 0 70px; }
+  .about-us_barcode {
+    border: 1px solid #af8e4f;
+    padding: 10px;
+    margin: 0;
+    display: block;
+    float: right; } }
 
 /*# sourceMappingURL=main.css.map */
