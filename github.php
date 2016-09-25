@@ -1,1 +1,1 @@
-<?php echo `git status`;
+<?php echo `git pull origin master`;
