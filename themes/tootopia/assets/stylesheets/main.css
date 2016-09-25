@@ -1997,6 +1997,24 @@ a:focus {
   font-weight: 400;
   font-size: 11px; }
 
+.rev_slider .slider-text .slider-title {
+  font-size: 30px; }
+
+.rev_slider .slider-text .slider-cat {
+  font-size: 18px;
+  padding-top: 20px; }
+  .rev_slider .slider-text .slider-cat a {
+    color: #af8e4f; }
+
+.rev_slider .slider-text .slider-title {
+  font-size: 30px; }
+
+.rev_slider .slider-text .slider-cat {
+  font-size: 18px;
+  padding-top: 20px; }
+  .rev_slider .slider-text .slider-cat a {
+    color: #af8e4f; }
+
 /* Post
  * -------------------------- */
 .post-wrapper {
