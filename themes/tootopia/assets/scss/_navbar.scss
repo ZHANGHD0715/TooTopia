@@ -2,6 +2,12 @@
 	background-color: $black;
 }
 
+.navbar-brand {
+	img {
+		width: 160px;
+	}
+}
+
 .navbar-search {
     margin-right: 0;
     margin-left: 25px;
@@ -15,13 +21,6 @@
 
     &:hover {
 		border-color: rgba($primary-color, 1);
-    }
-}
-
-@media (max-width: $breakpoints-medium-max) {
-    .navbar-search {
-        margin-top: 36px;
-        border: none;
     }
 }
 
@@ -42,5 +41,18 @@
 
 	&:before {
 		display: none;
+	}
+}
+
+@media (max-width: $breakpoints-medium-max) {
+    .navbar-search {
+        margin-top: 36px;
+        border: none;
+    }
+
+    .navbar-brand {
+		img {
+			width: 100px;
+		}
 	}
 }

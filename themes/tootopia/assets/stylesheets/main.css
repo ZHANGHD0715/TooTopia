@@ -1885,6 +1885,9 @@ a:focus {
 .navbar {
   background-color: #1a1a1a; }
 
+.navbar-brand img {
+  width: 160px; }
+
 .navbar-search {
   margin-right: 0;
   margin-left: 25px;
@@ -1897,11 +1900,6 @@ a:focus {
   cursor: pointer; }
   .navbar-search:hover {
     border-color: #af8e4f; }
-
-@media (max-width: 767px) {
-  .navbar-search {
-    margin-top: 36px;
-    border: none; } }
 
 #masthead #searchform {
   display: none; }
@@ -1917,6 +1915,13 @@ a:focus {
       color: #aaa; }
   #masthead #searchform:before {
     display: none; }
+
+@media (max-width: 767px) {
+  .navbar-search {
+    margin-top: 36px;
+    border: none; }
+  .navbar-brand img {
+    width: 100px; } }
 
 /* Categories
  * -------------------------- */
