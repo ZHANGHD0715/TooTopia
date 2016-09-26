@@ -49,24 +49,24 @@
         
         $args = array(
            'comment_field' =>  '<p class="comment-form-comment">' .
-            '<textarea id="comment" class="form-control" placeholder="' . __( 'Your Comment (required)', 'domainreference' ) . '" name="comment" cols="45" rows="5" aria-required="true">' .
+            '<textarea id="comment" class="form-control" placeholder="' . __( '发表自己的看法... (必填)', 'domainreference' ) . '" name="comment" cols="45" rows="5" aria-required="true">' .
             '</textarea></p>',
         
           'fields' => apply_filters( 'comment_form_default_fields', array(
         
             'author' =>
               '<div class="row"><div class="col-md-4"><p class="comment-form-author">' .
-              '<input id="author" class="form-control" placeholder="' . __( 'Name (required)', 'domainreference' ) . '" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) .
+              '<input id="author" class="form-control" placeholder="' . __( '名称 (必填)', 'domainreference' ) . '" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) .
               '" size="30"' . $aria_req . ' /></p></div>',
         
             'email' =>
               '<div class="col-md-4"><p class="comment-form-email">' .
-              '<input id="email" class="form-control" placeholder="' . __( 'Email (required)', 'domainreference' ) . '" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) .
+              '<input id="email" class="form-control" placeholder="' . __( '邮箱 (必填)', 'domainreference' ) . '" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) .
               '" size="30"' . $aria_req . ' /></p></div>',
         
             'url' =>
               '<div class="col-md-4"><p class="comment-form-url">' .
-              '<input id="url" class="form-control" placeholder="' . __( 'Website (Optional)', 'domainreference' ) . '" name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) .
+              '<input id="url" class="form-control" placeholder="' . __( '个人网站 (选填)', 'domainreference' ) . '" name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) .
               '" size="30" /></p></div></div>'
             )
           ),
