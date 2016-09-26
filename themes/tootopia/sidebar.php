@@ -22,7 +22,7 @@
     <aside class="widget widget_recent_entries" >
         
         <h3 class="widget-title">土豆饼 专栏</h3>
-        <?php query_posts('showposts=5&cat=43'); ?>
+        <?php query_posts('showposts=5&category_name="tu-dou-zhuan-lan"'); ?>
         
         <ul>
             <?php while (have_posts()) : the_post(); ?>
@@ -57,7 +57,7 @@
     <aside class="widget widget-full-wrapper" >
         
         <!-- <h3 class="widget-title">活动</h3> -->
-        <?php query_posts('showposts=1&cat=48'); ?>
+        <?php query_posts('showposts=1&category_name="tu-dou-huo-dong"'); ?>
         
         <?php while (have_posts()) : the_post(); ?>
         <?php if ( has_post_thumbnail() ) { ?>
@@ -75,7 +75,7 @@
     <aside class="widget widget_recent_entries" >
         
         <h3 class="widget-title">土豆摊</h3>
-        <?php query_posts('showposts=1&cat=45'); ?>
+        <?php query_posts('showposts=1&category_name="tu-dou-tan"'); ?>
         
         <ul>
             <?php while (have_posts()) : the_post(); ?>
