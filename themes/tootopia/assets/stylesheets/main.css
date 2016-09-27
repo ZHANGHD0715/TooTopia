@@ -2003,6 +2003,11 @@ a:focus {
   .rev_slider .slider-text .slider-cat a {
     color: #af8e4f; }
 
+@media (max-width: 767px) {
+  .fullwidthbanner-container {
+    margin: -35px -15px 0 !important;
+    width: auto; } }
+
 /* Caroufredsel
  * -------------------------- */
 .caroufredsel-posts {
@@ -2069,7 +2074,7 @@ article.format-status .entry-content p {
 .post-thumb {
   position: relative;
   display: block;
-  padding-top: 65%;
+  padding-top: 73%;
   overflow: hidden; }
   .post-thumb img {
     position: absolute;

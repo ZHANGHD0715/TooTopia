@@ -12,3 +12,10 @@
 		}
 	}
 }
+
+@media (max-width: $breakpoints-medium-max) {
+	.fullwidthbanner-container {
+		margin: -35px -15px 0!important;
+		width: auto;
+	}
+}
