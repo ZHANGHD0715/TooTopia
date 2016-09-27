@@ -80,18 +80,37 @@
 
     #masthead .navbar-collapse.in {
         overflow-y: visible;
+        height: 100vh;
     }
+
+    #masthead .navbar-toggle {
+        border: none!important;
+        &:hover {
+            background-color: transparent!important;
+            border: none;
+            span.icon-bar {
+                background-color: $primary-color;
+            }
+        }
+        span.icon-bar {
+            background-color: $primary-color;
+        }
+        span:nth-child(3) {
+            width: 18px;
+            margin-left: 4px;
+        }
+    }   
 
     #masthead .navbar-nav {
         margin: 0 -15px;
         padding-top: 15px;
         padding-bottom: 15px;
-        background-color: #34495e;
     }
 
     #masthead .navbar-nav > li > a {
         color: #bdc3c7;
         font-size: 13px;
+        text-align: center;
     }
 
     #masthead .navbar-nav > li > a:hover, #masthead .navbar-nav > li > a:focus {
@@ -132,8 +151,8 @@
     }
 
     #masthead .navbar-nav .open .dropdown-menu > .active > a, #masthead .navbar-nav .open .dropdown-menu > .active > a:hover, #masthead .navbar-nav .open .dropdown-menu > .active > a:focus, #masthead .navbar-nav > .active > a, #masthead .navbar-nav > .active > a:hover, #masthead .navbar-nav > .active > a:focus, #masthead .navbar-nav > .open > a, #masthead .navbar-nav > .open > a:hover, #masthead .navbar-nav > .open > a:focus {
-        color: #ecf0f1;
-        background-color: $black;
+        color: $primary-color;
+        background-color: transparent;
     }
 
     #masthead .navbar-nav > li.open > .dropdown-menu .dropdown > .dropdown-menu {
