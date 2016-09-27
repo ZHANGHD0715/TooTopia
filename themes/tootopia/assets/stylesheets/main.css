@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 Theme Name: ReTouch
 Theme URI: http://wobootstrap.com/wp/retouch/v1.2
@@ -1651,14 +1652,18 @@ address {
  * -------------------------- */
 body {
   background-color: #eee;
-  font-family: 'Montserrat', sans-serif;
+  font-family: -apple-system, "Montserrat", "Verdana", sans-serif;
   font-size: 12px;
   color: #333; }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "微软雅黑", "Microsoft Yahei", -apple-system, "Montserrat", "Verdana", sans-serif;
   font-weight: 700;
   color: #1a1a1a; }
+
+.tp-caption.medium_text, .medium_text {
+  font-family: "微软雅黑", "Microsoft Yahei", -apple-system, "Montserrat", "Verdana", sans-serif;
+  font-weight: normal !important; }
 
 iframe {
   border: 0; }

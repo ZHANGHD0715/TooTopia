@@ -1,17 +1,23 @@
 /* Default CSS
  * -------------------------- */
 body {
-    background-color: $light-gray;
-    font-family: 'Montserrat', sans-serif;
+    background-color: $body-background;
+    font-family: $body-font-family;
     font-size: 12px;
     color: $gray-black;
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: $microsoft-yahei, $body-font-family;
     font-weight: 700;
     color: $black;
 }
+
+.tp-caption.medium_text, .medium_text {
+    font-family: $microsoft-yahei, $body-font-family;;
+    font-weight: normal!important;
+}
+
 
 iframe {
     border: 0;

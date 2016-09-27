@@ -43,6 +43,8 @@
 // 1. Global
 // ---------
 
+// Responsive
+$primary-color: #af8e4f;
 $light-gray: #eee;
 $medium-gray: #cacaca;
 $dark-gray: #aaa;
@@ -50,8 +52,7 @@ $gray-black: #333;
 $black: #1a1a1a;
 $white: #fff;
 
-$primary-color: #af8e4f;
-
+// Responsive
 $breakpoints-small: 0;
 $breakpoints-medium-max: 767px;
 $breakpoints-medium: 768px;
@@ -59,6 +60,12 @@ $breakpoints-large: 992px;
 $breakpoints-xlarge: 1200px;
 $breakpoints-xxlarge: 1440px;
 
+// Global
+$body-background: $light-gray;
+$body-font-color: #333;
+$body-font-family: -apple-system, 'Montserrat', 'Verdana', sans-serif;
+$body-antialiased: true;
+$microsoft-yahei: '微软雅黑', 'Microsoft Yahei';
 
 // 4. Base Typography
 // ------------------
