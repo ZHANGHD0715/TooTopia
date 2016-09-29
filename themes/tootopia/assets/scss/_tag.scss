@@ -1,0 +1,17 @@
+/* Tagcloud
+ * -------------------------- */
+.tagcloud a {
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 6px 10px;
+    margin-bottom: 5px;
+    margin-right: 8px;
+    display: inline-block;
+    border-radius: 12px;
+    font-size: 12px!important;
+    background-color: $light-gray;
+
+    &:hover {
+    	background-color: $white;
+    	border-color: $medium-gray;
+    }
+}
