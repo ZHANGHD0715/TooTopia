@@ -1,11 +1,8 @@
 debug.log
-/uploads
-/plugins
-
 /themes/tootopia/.DS_Store
 /themes/tootopia/*.sass-cache*
 
-/themes/FoundationPress-master
+/themes/FoundationPress-master/
 /themes/timber-foundation-theme-master
 /themes/twenty*
 /upgrade

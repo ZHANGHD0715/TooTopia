@@ -1824,34 +1824,9 @@ a:focus {
     text-align: center; }
   #masthead .navbar-nav > li > a:hover, #masthead .navbar-nav > li > a:focus {
     color: #fff; }
-  #masthead .navbar-nav .open .dropdown-menu > li > a {
-    color: #bdc3c7; }
-  #masthead .navbar-nav .open .dropdown-menu > li > a:hover, #masthead .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #ecf0f1; }
-  #masthead .navbar-nav > .open > a, #masthead .navbar-nav > .open > a:hover, #masthead .navbar-nav > .open > a:focus {
-    z-index: 0; }
-  #masthead .nav > li.dropdown:before {
-    content: "+";
-    position: absolute;
-    top: 5px;
-    right: 15px;
-    color: #bdc3c7;
-    font-size: 18px;
-    z-index: 9999; }
-  #masthead .nav > li.dropdown.open:before {
-    content: "-";
-    right: 17px; }
-  #masthead .dropdown-menu > li > a:before {
-    content: "-";
-    margin-right: 5px;
-    margin-left: -10px; }
-  #masthead .navbar-nav .open .dropdown-menu > .active > a, #masthead .navbar-nav .open .dropdown-menu > .active > a:hover, #masthead .navbar-nav .open .dropdown-menu > .active > a:focus, #masthead .navbar-nav > .active > a, #masthead .navbar-nav > .active > a:hover, #masthead .navbar-nav > .active > a:focus, #masthead .navbar-nav > .open > a, #masthead .navbar-nav > .open > a:hover, #masthead .navbar-nav > .open > a:focus {
+  #masthead .navbar-nav > .active > a, #masthead .navbar-nav > .active > a:hover, #masthead .navbar-nav > .active > a:focus {
     color: #af8e4f;
-    background-color: transparent; }
-  #masthead .navbar-nav > li.open > .dropdown-menu .dropdown > .dropdown-menu {
-    padding-left: 15px; }
-  #masthead .navbar-nav > li.open > .dropdown-menu .dropdown:hover > .dropdown-menu {
-    display: block; } }
+    background-color: transparent; } }
 
 @media (min-width: 768px) {
   #masthead .navbar-nav {
@@ -1917,7 +1892,8 @@ a:focus {
   padding: 4px 15px;
   cursor: pointer; }
   .navbar-search:hover {
-    border-color: #af8e4f; }
+    border-color: #af8e4f;
+    background-color: rgba(175, 142, 79, 0.2); }
 
 #masthead #searchform {
   display: none; }
