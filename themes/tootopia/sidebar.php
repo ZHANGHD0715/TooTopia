@@ -21,7 +21,7 @@
     <!-- 侧边栏 专栏 -->
     <aside class="widget widget_recent_entries" >
         
-        <h3 class="widget-title">土豆饼 专栏</h3>
+        <h3 class="widget-title">土逗专栏</h3>
         <?php query_posts('showposts=5&category_name="tu-dou-zhuan-lan"'); ?>
         
         <ul>
@@ -52,29 +52,10 @@
         </ul>
     </aside>
 
-
-    <!-- 侧边栏 活动 -->
-    <aside class="widget widget-full-wrapper" >
-        
-        <!-- <h3 class="widget-title">活动</h3> -->
-        <?php query_posts('showposts=1&category_name="tu-dou-huo-dong"'); ?>
-        
-        <?php while (have_posts()) : the_post(); ?>
-        <?php if ( has_post_thumbnail() ) { ?>
-        <div class="widget-event widget-full-thumb">
-            <?php $post_thumbnail_src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'landscape-medium' ); ?>
-            <img src="<?php echo $post_thumbnail_src[0]; ?>" class="img-responsive" alt="">
-        </div>
-        <?php } ?>
-        <?php endwhile; ?>
-
-    </aside>
-
-
     <!-- 侧边栏 土豆摊 -->
     <aside class="widget widget_recent_entries" >
         
-        <h3 class="widget-title">土豆摊</h3>
+        <h3 class="widget-title">土逗摊</h3>
         <?php query_posts('showposts=1&category_name="tu-dou-tan"'); ?>
         
         <ul>
@@ -103,6 +84,23 @@
                 </li>
             <?php endwhile; ?>
         </ul>
+
+    </aside>
+
+    <!-- 侧边栏 活动 -->
+    <aside class="widget widget-full-wrapper" >
+        
+        <!-- <h3 class="widget-title">活动</h3> -->
+        <?php query_posts('showposts=1&category_name="tu-dou-huo-dong"'); ?>
+        
+        <?php while (have_posts()) : the_post(); ?>
+        <?php if ( has_post_thumbnail() ) { ?>
+        <div class="widget-event widget-full-thumb">
+            <?php $post_thumbnail_src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'landscape-medium' ); ?>
+            <img src="<?php echo $post_thumbnail_src[0]; ?>" class="img-responsive" alt="">
+        </div>
+        <?php } ?>
+        <?php endwhile; ?>
 
     </aside>
 

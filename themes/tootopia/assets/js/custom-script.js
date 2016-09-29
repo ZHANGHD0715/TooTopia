@@ -3,7 +3,7 @@
     // and other libraries also using $ will not be accessible under this shortcut
     $('.widget_calendar table').addClass('table table-bordered');
     $('.attachment-post-thumbnail').addClass('img-responsive');
-    $('ul.page-numbers').addClass('pagination');
+    $('ul.page-numbers').addClass('pagination').addClass('clearfix');
     $('.page-numbers.current, .page-numbers.dots').parent().addClass('disabled');   
 })(jQuery);
 
@@ -65,4 +65,20 @@ jQuery(document).ready(function ($) {
 
     // Fit Images
     objectFitImages('img.img-responsive');
+
+    var x = 0;
+    // Lazy Loading
+    $('.post-thumb img.lazy').error(function(){
+        $(this).attr('src', '../img/loading.gif');
+    });
+
+    $('.post-thumb img.lazy').Lazy({
+        // your configuration goes here
+        scrollDirection: 'vertical',
+        effect: 'fadeIn',
+        visibleOnly: true,
+        onError: function(element) {
+            console.log('error loading ' + element.data('src'));
+        }
+    });
 });

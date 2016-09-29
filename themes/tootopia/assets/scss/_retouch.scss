@@ -1541,22 +1541,6 @@ blockquote small {
     filter: alpha(opacity=15);
 }
 
-/* Pagination
- * -------------------------- */
-.pagination {
-    margin: 25px 0;
-}
-
-.pagination > li > a, .pagination > li > span {
-    margin-left: 5px;
-    color: #ffffff;
-    border-radius: 3px;
-}
-
-.pagination .disabled > span, .pagination .disabled > span:hover, .pagination .disabled > span:focus {
-    background-color: #3be6c4;
-}
-
 /* Search Form
  * -------------------------- */
 

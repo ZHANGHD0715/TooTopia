@@ -6,18 +6,18 @@
 @import "global";
 @import "layout";
 
-@import "menu";
 @import "navbar";
 @import "sidebar";
-@import "widget";
 @import "slider";
 @import "caroufredsel";
-@import "share";
 
-@import "user";
 @import "post";
 @import "single-post";
 @import "comment";
 @import "archive";
-
 @import "aboutus";
+@import "pagination";
+
+@import "widget";
+@import "share";
+@import "user";

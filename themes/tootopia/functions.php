@@ -249,6 +249,8 @@
         wp_register_script( 'holder', get_template_directory_uri() . '/assets/js/holder.js', array(), '1.0.0', true ); 
         wp_register_script( 'prettyPhoto', get_template_directory_uri() . '/assets/prettyPhoto/js/jquery.prettyPhoto.js', array(), '1.0.0', true ); 
         wp_register_script( 'jquery-easing', get_template_directory_uri() . '/assets/UItoTop/js/easing.js', array(), '1.0.0', true ); 
+        wp_register_script( 'lazyLoading', 'http://cdn.jsdelivr.net/jquery.lazy/1.7.3/jquery.lazy.min.js', array(), '1.0.0', true ); 
+        wp_register_script( 'lazyLoadingPlugins', 'http://cdn.jsdelivr.net/jquery.lazy/1.7.3/jquery.lazy.plugins.min.js', array(), '1.0.0', true ); 
         wp_register_script( 'UItoTop', get_template_directory_uri() . '/assets/UItoTop/js/jquery.ui.totop.js', array(), '1.0.0', true );     
         wp_register_script( 'carouFredSel', get_template_directory_uri() . '/assets/js/jquery.carouFredSel-6.2.1-packed.js', array( 'jquery' ), '1.0.0'); 
         wp_register_script( 'isotope', get_template_directory_uri() . '/assets/js/jquery.isotope.min.js', array( 'jquery' ), '1.0.0');
@@ -265,6 +267,8 @@
         wp_enqueue_script( 'holder' );
         wp_enqueue_script( 'prettyPhoto' );
         wp_enqueue_script( 'jquery-easing' );
+        wp_enqueue_script( 'lazyLoading' );
+        wp_enqueue_script( 'lazyLoadingPlugins' );
         wp_enqueue_script( 'UItoTop' );    
         wp_enqueue_script( 'carouFredSel' );
         wp_enqueue_script( 'isotope' );

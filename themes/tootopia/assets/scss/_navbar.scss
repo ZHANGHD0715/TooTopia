@@ -1,17 +1,212 @@
-.navbar {
-	background-color: $black;
+/* Navbar
+ * -------------------------- */
+#masthead .navbar {
+    min-height: 80px;
+    border: 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+    margin-bottom: 0;
+    border-radius: 0;
+    transition: all 0.2s ease;
+    background-color: $black;
 }
 
-.navbar-brand {
-	img {
+#masthead.affix .navbar.navbar-default {
+    background-color: rgba(44, 62, 80, 0.9);
+}
+
+#masthead .navbar-brand {
+    font-size: 24px;
+    font-weight: 800;
+    color: #ffffff !important;
+    text-transform: uppercase;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    line-height: 80px;
+    font-family: 'Open Sans', sans-serif;
+    // height: 100px;
+
+    img {
 		width: 160px;
 	}
+}
+
+#masthead .navbar-brand > img {
+    display: inline-block;
+}
+
+#masthead.affix .navbar-brand {
+    font-size: 20px;
+    line-height: 70px;
+}
+
+#masthead .navbar-brand:hover, #masthead .navbar-brand:focus {
+    color: $black;
+}
+
+#masthead .navbar-toggle {
+    border-radius: 0;
+    margin-top: 33px;
+}
+
+#masthead.affix .navbar-toggle {
+    margin-top: 18px;
+}
+
+#masthead .navbar-toggle:hover, #masthead .navbar-toggle:focus {
+    background-color: $primary-color;
+    border-color: $primary-color;
+}
+
+#masthead .navbar-toggle:hover .icon-bar, #masthead .navbar-toggle:focus .icon-bar {
+    background-color: #ffffff;
+}
+
+#masthead .navbar-nav > li > a {
+    color: $light-gray;
+    font-weight: 700;
+}
+
+#masthead .navbar-nav > li .dropdown-menu {
+    font-size: 13px;
+}
+
+#masthead .dropdown-menu > li > a {
+    font-weight: 400;
+}
+
+#masthead .navbar-default .navbar-nav > .dropdown > a .caret {
+    display: none;
+}
+
+@media (max-width: $breakpoints-medium-max) {
+    #masthead .navbar-collapse {
+        border-top: 0;
+    }
+
+    #masthead .navbar-collapse.in {
+        overflow-y: visible;
+        height: 100vh;
+    }
+
+    #masthead .navbar-toggle {
+        border: none!important;
+        &:hover {
+            background-color: transparent!important;
+            border: none;
+            span.icon-bar {
+                background-color: $primary-color;
+            }
+        }
+        span.icon-bar {
+            background-color: $primary-color;
+        }
+        span:nth-child(3) {
+            width: 18px;
+            margin-left: 4px;
+        }
+    }   
+
+    #masthead .navbar-nav {
+        margin: 0 -15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    #masthead .navbar-nav > li > a {
+        color: #bdc3c7;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    #masthead .navbar-nav > li > a:hover, #masthead .navbar-nav > li > a:focus {
+        color: #fff;
+    }
+
+    #masthead .navbar-nav > .active > a, #masthead .navbar-nav > .active > a:hover, #masthead .navbar-nav > .active > a:focus {
+        color: $primary-color;
+        background-color: transparent;
+    }
+
+}
+
+@media (min-width: $breakpoints-medium) {
+    #masthead .navbar-nav {
+        float: right;
+        margin-right: -15px;
+        margin-top: 5px;
+    }
+
+    #masthead .navbar-nav > li > a {
+        padding: 21px 10px;
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+
+    #masthead .navbar-nav > li > a:hover, 
+    #masthead .navbar-nav > li > a:focus {
+        color: $primary-color;
+    }
+
+    #masthead .navbar-nav > li.current-menu-parent:last-child > a {
+        margin-right: 15px;
+    }
+
+    #masthead .navbar-nav > .active > a, 
+    #masthead .navbar-nav > .active > a:hover, 
+    #masthead .navbar-nav > .active > a:focus {
+        background-color: transparent;
+        color: $primary-color;
+    }
+    
+    #masthead .navbar-nav > li.active,
+    #masthead .navbar-nav > li:hover {
+        &:after {
+            width: 100%;
+        }
+    }
+
+    #masthead .navbar-nav > li {
+        &:after {
+            content: " ";
+            display: block;
+            width: 0px;
+            height: 3px;
+            margin: 0 auto;
+            background-color: $primary-color;
+            transition: all 0.5s ease;
+        }
+    }
+
+    #masthead.fixedHeader {
+        position: fixed;
+        width: 100%;
+        z-index: 9999;
+        top: 0;
+
+        .navbar {
+            background-color: rgba($black, 0.8);
+            &:hover {
+                background-color: rgba($black, 1);    
+            }
+        }
+    }
+
+}
+
+@media (min-width: $breakpoints-large) {
+    #masthead .navbar-nav > li > a {
+        font-size: 16px;
+    }
+
+    #masthead .navbar-nav > li > a {
+        padding: 21px;
+    }
 }
 
 .navbar-search {
     margin-right: 0;
     margin-left: 25px;
-    margin-top: 30px;
+    margin-top: 21px;
     color: $primary-color;
     font-size: 16px;
     border: 1px solid rgba($primary-color, 0.7);

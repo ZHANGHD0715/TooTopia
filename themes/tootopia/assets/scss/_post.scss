@@ -56,6 +56,29 @@ article.format-status .entry-content p {
         height: 100%;
         object-fit: cover;
     }
+
+    img:after {  
+      content: " ";
+      font-size: 12px;
+      display: block;
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: transparent;
+      border: 5px solid $white;
+      border-top-width: 20px;
+      box-sizing: border-box;
+    }
+
+    img.lazy {
+        /* optional way, set loading as background */
+        background-image: url('../img/loading.gif');
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
 }
 
 .fallback-im {

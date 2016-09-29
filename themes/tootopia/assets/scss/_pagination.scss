@@ -1,0 +1,25 @@
+/* Pagination
+ * -------------------------- */
+.pagination {
+    margin: 25px 15px;
+	clear: both;
+	padding-top: 30px;
+}
+
+.pagination > li > a, .pagination > li > span {
+    margin-left: 5px;
+    color: #ffffff;
+    border-radius: 3px;
+}
+
+.pagination .disabled > span, .pagination .disabled > span:hover, .pagination .disabled > span:focus {
+    background-color: rgba($primary-color, 0.7);
+}
+
+.pagination > li > a, .pagination > li > span {
+	background-color: $primary-color;
+}
+
+.pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus {
+	background-color: $primary-color;
+}
