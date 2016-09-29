@@ -24,7 +24,7 @@
                     
                     <?php putRevSlider( "home_slide" ) ?>
 
-                    <div id="content" role="main">
+                    <div id="content" class="clearfix" role="main">
 
                         <?php if ( have_posts() ) : ?>
                         <?php /* Start the Loop */ ?>
