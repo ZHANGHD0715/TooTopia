@@ -1,9 +1,9 @@
 debug.log
-/themes/tootopia/.DS_Store
-/themes/tootopia/*.sass-cache*
+themes/tootopia/.DS_Store
+themes/tootopia/*.sass-cache*
 
-/themes/FoundationPress-master/
-/themes/timber-foundation-theme-master
-/themes/twenty*
-/upgrade
-/uploads
+themes/FoundationPress-master/
+themes/timber-foundation-theme-master/
+themes/twenty*/
+upgrade/
+uploads/
