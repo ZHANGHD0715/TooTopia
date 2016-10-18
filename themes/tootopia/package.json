@@ -19,7 +19,8 @@
     "gulp-notify": "^2.2.0",
     "gulp-sass": "^2.3.2",
     "gulp-sourcemaps": "^1.6.0",
-    "gulp-uglify": "^2.0.0"
+    "gulp-uglify": "^2.0.0",
+    "yargs": "^6.2.0"
   },
   "dependencies": {
     "object-fit-images": "^2.5.6"
