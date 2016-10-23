@@ -2160,6 +2160,10 @@ blockquote {
   .single .entry-meta-date .entry-meta-label {
     margin-right: 5px; }
 
+#related-post {
+  background-color: #fff;
+  margin: 1rem 0; }
+
 /* =Comments
 ----------------------------------------------- */
 .comments-title {
