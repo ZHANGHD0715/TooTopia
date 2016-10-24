@@ -2063,7 +2063,8 @@ article.format-status .entry-content p {
   margin: 20px 0 10px;
   position: relative;
   font-size: 16px;
-  font-weight: normal; }
+  font-weight: normal;
+  overflow: hidden; }
 
 .post-meta {
   padding: 10px 0;
@@ -2160,9 +2161,12 @@ blockquote {
   .single .entry-meta-date .entry-meta-label {
     margin-right: 5px; }
 
-#related-post {
-  background-color: #fff;
-  margin: 1rem 0; }
+#related-post .entry-wrap {
+  position: relative;
+  padding: 20px 10px 10px; }
+
+#related-post .entry-title {
+  font-size: 16px; }
 
 /* =Comments
 ----------------------------------------------- */

@@ -1,4 +1,10 @@
 #related-post {
-    background-color: $white;
-    margin: 1rem 0;
+    .entry-wrap {
+        position: relative;
+        padding: 20px 10px 10px;
+    }
+
+    .entry-title {
+        font-size: 16px;
+    }
 }
