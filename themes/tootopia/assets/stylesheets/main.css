@@ -2484,6 +2484,58 @@ a.comment-reply-link > span {
   padding: 30px 20px; }
   .widget.widget-full-wrapper {
     padding: 0; }
+  .widget .share-title {
+    font-size: 18px;
+    margin-left: 1rem; }
+    .widget .share-title:before {
+      content: '';
+      display: inline-block;
+      vertical-align: bottom;
+      background-image: url(../img/share-icon/stroke-1.svg);
+      width: 25px;
+      height: 25px; }
+  .widget .share-icon-list {
+    display: inline-block;
+    vertical-align: bottom;
+    text-align: right; }
+    .widget .share-icon-list * {
+      cursor: pointer; }
+    .widget .share-icon-list .share-icon-wechat {
+      margin: 0 .5rem; }
+      .widget .share-icon-list .share-icon-wechat:before {
+        content: '';
+        display: inline-block;
+        vertical-align: bottom;
+        background-image: url(../img/share-icon/rectangle-wechat.svg);
+        width: 31px;
+        height: 31px; }
+    .widget .share-icon-list .share-icon-weibo {
+      margin: 0 .5rem; }
+      .widget .share-icon-list .share-icon-weibo:before {
+        content: '';
+        display: inline-block;
+        vertical-align: bottom;
+        background-image: url(../img/share-icon/rectangle-weibo.svg);
+        width: 30px;
+        height: 30px; }
+    .widget .share-icon-list .share-icon-douban {
+      margin: 0 .5rem; }
+      .widget .share-icon-list .share-icon-douban:before {
+        content: '';
+        display: inline-block;
+        vertical-align: bottom;
+        background-image: url(../img/share-icon/rectangle-douban.svg);
+        width: 30px;
+        height: 30px; }
+    .widget .share-icon-list .share-icon-facebook {
+      margin: 0 .5rem; }
+      .widget .share-icon-list .share-icon-facebook:before {
+        content: '';
+        display: inline-block;
+        vertical-align: bottom;
+        background-image: url(../img/share-icon/rectangle-facebook.svg);
+        width: 30px;
+        height: 30px; }
 
 .widget p:last-child {
   margin-bottom: 0; }
