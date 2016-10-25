@@ -29,7 +29,12 @@
             <div class="entry-title"><?php the_title(); ?></div>
             <?php else : ?>
             <div class="entry-title">
-                <a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
+                <a href="<?php the_permalink(); ?>" rel="bookmark">
+                    <?php
+                    $title = the_title('','',false);
+                    echo mb_strimwidth($title, 0, 46, '...');
+                    ?>
+                </a>
             </div>
             <?php endif; // is_single() ?>
         </header>
