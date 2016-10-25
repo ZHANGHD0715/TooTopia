@@ -143,6 +143,11 @@ article.format-status .entry-content p {
     float: left;
     i, a {
         color: $primary-color;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        display: inline-block;
+        vertical-align: bottom;
     }
 }
 
@@ -209,5 +214,18 @@ blockquote {
     .entry-title {
         min-height: 48px;
         line-height: 1.4;
+    }
+}
+
+@media(min-width: $breakpoints-large) {
+    .entry-meta .post-cats {
+        i, a {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            display: inline-block;
+            vertical-align: bottom;
+            max-width: 80px;
+        }
     }
 }
