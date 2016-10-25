@@ -12,6 +12,7 @@
 
     .share-title {
         font-size: 18px;
+        margin-left: 1rem;
 
         &:before {
             content: '';
@@ -26,7 +27,6 @@
     .share-icon-list {
         display: inline-block;
         vertical-align: bottom;
-        margin-left: 1rem;
         text-align: right;
 
         * {
