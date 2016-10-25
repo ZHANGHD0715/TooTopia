@@ -53,7 +53,7 @@
     </aside>
 
     <!-- 侧边栏 土豆摊 -->
-    <aside class="widget widget_recent_entries" >
+    <aside class="widget widget_recent_entries widget_tudou_tan" >
         
         <h3 class="widget-title">土逗摊</h3>
         <?php query_posts('showposts=1&category_name="tu-dou-tan"'); ?>

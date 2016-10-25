@@ -49,3 +49,32 @@
 #footer-1 .widget-list > li {
     border-color: rgba(255, 255, 255, 0.1);
 }
+
+.widget_tudou_tan {
+    position: relative;
+    padding: 0!important;
+    .widget-title {
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        z-index: 9999;
+        color: $white;
+    }
+    & > ul > li {
+        margin-bottom: 0;
+    }
+    .widget-entry-thumb {
+        position: relative;
+        padding-top: 100%;
+        overflow: hidden;
+        img {
+            position: absolute;
+            top: 0;
+            height: 100%;
+            max-width: none;
+        }
+    }
+    .widget-entry-summary-wrapper {
+        padding-top: 30px;
+    }
+}
