@@ -2078,7 +2078,12 @@ article.format-status .entry-content p {
 .entry-meta .post-cats {
   float: left; }
   .entry-meta .post-cats i, .entry-meta .post-cats a {
-    color: #af8e4f; }
+    color: #af8e4f;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: bottom; }
 
 .entry-meta .post-date {
   margin-right: 0;
@@ -2127,6 +2132,15 @@ blockquote {
   .entry-title {
     min-height: 48px;
     line-height: 1.4; } }
+
+@media (min-width: 992px) {
+  .entry-meta .post-cats i, .entry-meta .post-cats a {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: bottom;
+    max-width: 80px; } }
 
 /* Single Post
  * -------------------------- */
