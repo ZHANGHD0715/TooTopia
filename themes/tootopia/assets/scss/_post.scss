@@ -217,7 +217,7 @@ blockquote {
     }
 }
 
-@media(min-width: $breakpoints-large) {
+@media(min-width: $breakpoints-xlarge) {
     .entry-meta .post-cats {
         i, a {
             text-overflow: ellipsis;
@@ -226,6 +226,19 @@ blockquote {
             display: inline-block;
             vertical-align: bottom;
             max-width: 80px;
+        }
+    }
+}
+
+@media(min-width: $breakpoints-large) and (max-width:$breakpoints-xlarge) {
+    .entry-meta .post-cats {
+        i, a {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            display: inline-block;
+            vertical-align: bottom;
+            max-width: 120px;
         }
     }
 }

@@ -105,5 +105,9 @@
     </aside>
 
     <?php dynamic_sidebar( $sidebar ); ?>
+
+    <aside class="widget widget-full-wrapper">
+        <i class="glyphicon glyphicon-eye-open"></i>
+    </aside>
 </div><!-- #secondary -->
 <?php endif; ?>
