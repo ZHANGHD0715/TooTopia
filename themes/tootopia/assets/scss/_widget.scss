@@ -9,6 +9,82 @@
     &.widget-full-wrapper {
         padding: 0;        
     }
+
+    .share-title {
+        font-size: 18px;
+
+        &:before {
+            content: '';
+            display: inline-block;
+            vertical-align: bottom;
+            background-image: url(../img/share-icon/stroke-1.svg);
+            width: 25px;
+            height: 25px;
+        }
+    }
+
+    .share-icon-list {
+        display: inline-block;
+        vertical-align: bottom;
+        margin-left: 1rem;
+        text-align: right;
+
+        * {
+            cursor: pointer;
+        }
+
+        .share-icon-wechat {
+            margin: 0 .5rem;
+
+            &:before {
+                content: '';
+                display: inline-block;
+                vertical-align: bottom;
+                background-image: url(../img/share-icon/rectangle-wechat.svg);
+                width: 31px;
+                height: 31px;
+            }
+        }
+
+        .share-icon-weibo {
+            margin: 0 .5rem;
+
+            &:before {
+                content: '';
+                display: inline-block;
+                vertical-align: bottom;
+                background-image: url(../img/share-icon/rectangle-weibo.svg);
+                width: 30px;
+                height: 30px;
+            }
+        }
+
+        .share-icon-douban {
+            margin: 0 .5rem;
+
+            &:before {
+                content: '';
+                display: inline-block;
+                vertical-align: bottom;
+                background-image: url(../img/share-icon/rectangle-douban.svg);
+                width: 30px;
+                height: 30px;
+            }
+        }
+
+        .share-icon-facebook {
+            margin: 0 .5rem;
+
+            &:before {
+                content: '';
+                display: inline-block;
+                vertical-align: bottom;
+                background-image: url(../img/share-icon/rectangle-facebook.svg);
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
 }
 
 .widget p:last-child {

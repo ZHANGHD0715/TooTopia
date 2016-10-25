@@ -106,8 +106,16 @@
 
     <?php dynamic_sidebar( $sidebar ); ?>
 
-    <aside class="widget widget-full-wrapper">
-        <i class="glyphicon glyphicon-eye-open"></i>
+    <aside class="widget">
+        <div class="row">
+            <span class="share-title">关注我们</span>
+            <div class="share-icon-list">
+                <span class="share-icon-wechat"></span>
+                <span class="share-icon-weibo"></span>
+                <span class="share-icon-douban"></span>
+                <span class="share-icon-facebook"></span>
+            </div>
+        </div>
     </aside>
 </div><!-- #secondary -->
 <?php endif; ?>
