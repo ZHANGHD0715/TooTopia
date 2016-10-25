@@ -2133,7 +2133,7 @@ blockquote {
     min-height: 48px;
     line-height: 1.4; } }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .entry-meta .post-cats i, .entry-meta .post-cats a {
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -2141,6 +2141,15 @@ blockquote {
     display: inline-block;
     vertical-align: bottom;
     max-width: 80px; } }
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .entry-meta .post-cats i, .entry-meta .post-cats a {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: bottom;
+    max-width: 120px; } }
 
 /* Single Post
  * -------------------------- */
