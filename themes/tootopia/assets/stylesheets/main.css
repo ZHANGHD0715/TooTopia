@@ -2603,6 +2603,30 @@ a.comment-reply-link > span {
   margin-top: 1rem;
   padding-top: 1rem; }
 
+.focus-us .focus-us-pic {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 2rem;
+  width: 100px;
+  height: 100px;
+  background-image: url(../img/share-img/tootopia.png);
+  -webkit-background-size: contain;
+  background-size: contain; }
+
+.focus-us .focus-us-content {
+  display: inline-block;
+  vertical-align: middle; }
+  .focus-us .focus-us-content .main-title {
+    height: 24px;
+    font-size: 18px;
+    margin-bottom: 4px;
+    color: #af8e4f;
+    -webkit-text-stroke: 1px #af8e4f; }
+  .focus-us .focus-us-content .sub-title {
+    height: 21px;
+    font-size: 16px;
+    color: #333; }
+
 /* Tagcloud
  * -------------------------- */
 .tagcloud a {

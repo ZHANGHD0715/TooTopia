@@ -104,6 +104,22 @@
 
     </aside>
 
+    <aside class="widget">
+        <div class="focus-us">
+            <div class="focus-us-pic">
+
+            </div>
+            <div class="focus-us-content">
+                <div class="main-title">
+                    訂閱土逗公社
+                </div>
+                <div class="sub-title ">
+                    一起尋求社會變革
+                </div>
+            </div>
+        </div>
+    </aside>
+
     <?php dynamic_sidebar( $sidebar ); ?>
 
     <aside class="widget">
