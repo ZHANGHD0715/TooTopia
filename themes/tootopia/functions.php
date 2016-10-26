@@ -182,6 +182,17 @@
         tgmpa( $plugins, $config );
     }
     
+    function rt_theme_get_modal_dialog() {
+        $dom = '<div class="modal fade js-share-wechat" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="share-modal modal-sm">
+                        <div class="modal-content-wechat">
+                               
+                        </div>
+                    </div>
+                </div>';
+        echo $dom;
+    }
+
     /**
      * Return the Google font stylesheet URL, if available.
      *

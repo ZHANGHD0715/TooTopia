@@ -327,7 +327,10 @@ function wp_rp_generate_related_posts_list_items($related_posts, $selected_relat
 		//title
 		$output .= '<header class="entry-header">
                         <div class="entry-title">';
-		$output .= '<a href="' . $post_url . '" rel="bookmark">' . wptexturize($related_post->post_title) . '</a> </div> </header>';
+		
+		$output_title = mb_strimwidth(wptexturize($related_post->post_title) , 0, 46, '...');
+
+		$output .= '<a href="' . $post_url . '" rel="bookmark">' . $output_title . '</a> </div> </header>';
 		
 		$output .= '<footer class="entry-meta clearfix">';
 

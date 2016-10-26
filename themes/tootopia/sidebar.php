@@ -110,12 +110,13 @@
         <div class="row">
             <span class="share-title">关注我们</span>
             <div class="share-icon-list">
-                <span class="share-icon-wechat"></span>
-                <span class="share-icon-weibo"></span>
-                <span class="share-icon-douban"></span>
-                <span class="share-icon-facebook"></span>
+                <span class="share-icon-wechat" data-toggle="modal" data-target=".js-share-wechat"></span>
+                <span class="share-icon-weibo" data-toggle="modal" data-target=".js-share-wechat"></span>
+                <span class="share-icon-douban" data-toggle="modal" data-target=".js-share-wechat"></span>
+                <span class="share-icon-facebook" data-toggle="modal" data-target=".js-share-wechat"></span>
             </div>
         </div>
     </aside>
+     <?php  rt_theme_get_modal_dialog(); ?>
 </div><!-- #secondary -->
 <?php endif; ?>
