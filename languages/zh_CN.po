@@ -6396,7 +6396,7 @@ msgstr "要发表评论，您必须先<a href=\"%s\">登录</a>。"
 #. translators: 1: edit user link, 2: accessibility text, 3: user name, 4:
 #. logout URL
 #: wp-includes/comment-template.php:2158
-msgid "<a href=\"%1$s\" aria-label=\"%2$s\">Logged in as %3$s</a>. <a href=\"%4$s\">Log out?</a>"
+msgid "<a href=\"%1$s\" aria-label=\"%2$s\">已登入为 %3$s</a>. <a href=\"%4$s\">登出？</a>"
 msgstr "<a href=\"%1$s\" aria-label=\"%2$s\">已登入为%3$s</a>。<a href=\"%4$s\">登出？</a>"
 
 #. translators: %s: user name
