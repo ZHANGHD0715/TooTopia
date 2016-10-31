@@ -20,10 +20,10 @@
 
     <!-- 侧边栏 专栏 -->
     <aside class="widget widget_recent_entries" >
-        
+
         <h3 class="widget-title">土逗专栏</h3>
-        <?php query_posts('showposts=5&category_name="tu-dou-zhuan-lan"'); ?>
-        
+        <?php query_posts('showposts=2&category_name="tu-dou-zhuan-lan"'); ?>
+
         <ul>
             <?php while (have_posts()) : the_post(); ?>
                 <li>
@@ -37,7 +37,7 @@
                             </div>
                             <?php } ?>
                         </div>
-                        
+
                         <div class="col-xs-8 widget-entry-summary-wrapper">
                             <a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a>
                             <div class="widget-post-date" >
@@ -54,10 +54,10 @@
 
     <!-- 侧边栏 土豆摊 -->
     <aside class="widget widget_recent_entries widget_tudou_tan" >
-        
+
         <h3 class="widget-title">土逗摊</h3>
         <?php query_posts('showposts=1&category_name="tu-dou-tan"'); ?>
-        
+
         <ul>
             <?php while (have_posts()) : the_post(); ?>
                 <li>
@@ -71,7 +71,7 @@
                             </div>
                             <?php } ?>
                         </div>
-                        
+
                         <div class="col-xs-6 widget-entry-summary-wrapper">
                             <a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a>
                             <div class="widget-post-date" >
@@ -89,10 +89,10 @@
 
     <!-- 侧边栏 活动 -->
     <aside class="widget widget-full-wrapper" >
-        
+
         <!-- <h3 class="widget-title">活动</h3> -->
         <?php query_posts('showposts=1&category_name="tu-dou-huo-dong"'); ?>
-        
+
         <?php while (have_posts()) : the_post(); ?>
         <?php if ( has_post_thumbnail() ) { ?>
         <div class="widget-event widget-full-thumb">
