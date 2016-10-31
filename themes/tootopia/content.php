@@ -33,7 +33,13 @@
         <div class="entry-meta-single" >
             <span class="entry-meta-avator">
                 <?php echo get_avatar( get_the_author_meta('user_email'), $size = '20'); ?>
-                <?php the_author(); ?>
+                <?php $customise_author = get_post_meta($post->ID, "author_name", $single = true); ?>
+                
+                <?php if(strlen($customise_author) > 0): ?>
+                    <?php echo $customise_author; ?>
+                <?php else:?>
+                    <?php the_author(); ?>
+                <?php endif;?>
             </span>
 
             <span class="entry-meta-date" >
