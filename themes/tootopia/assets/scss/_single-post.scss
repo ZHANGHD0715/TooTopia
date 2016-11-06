@@ -46,3 +46,42 @@
         }
     }
 }
+
+#jiathis_style_32x32 {
+    .jiathis_title {
+        float: left;
+        vertical-align: middle;
+        width: 64px;
+        height: 32px;
+        font-size: 16px;
+        color: $dark-gray;
+    }
+
+    .jiathis_button_qzone {
+        .jtico {
+            background-image: url('../img/share-icon/share-qzone-32.png');
+            background-position: 0;
+        }
+    }
+
+    .jiathis_button_tsina {
+        .jtico {
+            background-image: url('../img/share-icon/share-weibo-32.png');
+            background-position: 0;
+        }
+    }
+
+    .jiathis_button_weixin {
+        .jtico {
+            background-image: url('../img/share-icon/share-wechat-32.png');
+            background-position: 0;
+        }
+    }
+
+    .jiathis_button_fb {
+        .jtico {
+            background-image: url('../img/share-icon/share-facebook-32.png');
+            background-position: 0;
+        }
+    }
+}
