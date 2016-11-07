@@ -2,7 +2,7 @@
  * -------------------------- */
 body {
     background-color: $body-background;
-    font-family: $body-font-family;
+    font-family: $microsoft-yahei, $body-font-family;
     font-size: 12px;
     color: $gray-black;
 }
@@ -21,10 +21,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 iframe {
     border: 0;
-}
-
-input, button, select, textarea {
-    font-family: 'Montserrat', sans-serif;
 }
 
 a {
