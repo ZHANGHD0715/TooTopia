@@ -2583,6 +2583,9 @@ a.comment-reply-link > span {
     display: block;
     float: right; } }
 
+body.page-id-24 #content .jiathis_share_block:last-child {
+  display: none; }
+
 /* Pagination
  * -------------------------- */
 .pagination {

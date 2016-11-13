@@ -10,7 +10,7 @@ Author URI: http://www.jiathis.com
 
 load_plugin_textdomain('jiathis');
 $jiathis_share_code='<!-- JiaThis Button BEGIN -->
-<div id="jiathis_style_32x32">
+<div id="jiathis_style_32x32" class="jiathis_share_block">
 	<a class="jiathis_button_qzone"></a>
 	<a class="jiathis_button_tsina"></a>
 	<a class="jiathis_button_tqq"></a>
@@ -112,7 +112,7 @@ function jiathis_options() {
     if($updated) {
 		echo '<div class="updated settings-error" id="setting-error-settings_updated"><p><strong>JiaThis分享代码已经成功保存。</strong></p></div>';
     }
-	
+
     echo '<p><textarea style="height:250px;width:700px" name="jiathis_code">' . $jiathis_code . '</textarea></p>';
 	echo '<input type="radio" name="inpage" value="yes" ' . (get_option('jiathis_feed')=='yes' ? 'checked="checked"' : '') . '/>&nbsp;&nbsp;全站显示&nbsp;&nbsp;&nbsp;&nbsp;';
 	echo '<input type="radio" name="inpage" value="no" ' . (get_option('jiathis_feed')=='no' ? 'checked="checked"' : '') . '/>&nbsp;&nbsp;只在文章详细页面显示<br><br>';
