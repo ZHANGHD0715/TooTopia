@@ -12,7 +12,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
     <div class="entry-wrap panel">
-        
+
         <!-- thumbnail -->
         <div class="post-thumb entry-thumb">
         <?php if ( has_post_thumbnail() ) { ?>
@@ -21,7 +21,7 @@
         <?php } else { ?>
             <img data-src="<?php bloginfo('template_directory'); ?>/assets/img/post-fallback.png" class="img-responsive lazy" alt="<?php the_title(); ?>" />
         <?php } ?>
-        </div> 
+        </div>
 
         <!-- title -->
         <header class="entry-header">
@@ -32,26 +32,26 @@
                 <a href="<?php the_permalink(); ?>" rel="bookmark">
                     <?php
                     $title = the_title('','',false);
-                    echo mb_strimwidth($title, 0, 46, '...');
+                    echo mb_strimwidth($title, 0, 56, '...');
                     ?>
                 </a>
             </div>
             <?php endif; // is_single() ?>
         </header>
         <!-- .entry-header -->
-        
-        <?php if ( is_single() ) { ?>    
+
+        <?php if ( is_single() ) { ?>
         <div class="entry-content">
             <?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'retouch' ) ); ?>
             <?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'retouch' ), 'after' => '</div>' ) ); ?>
         </div>
         <?php } ?>
         <!-- .entry-content -->
-        
+
         <footer class="entry-meta clearfix">
             <?php retouch_entry_meta(); ?>
         </footer>
-        
+
         <!-- .entry-meta -->
     </div>
     <!-- .entry-wrap -->
