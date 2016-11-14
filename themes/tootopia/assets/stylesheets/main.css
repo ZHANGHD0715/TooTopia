@@ -2152,7 +2152,8 @@ blockquote {
 
 @media (min-width: 768px) {
   .entry-title {
-    min-height: 48px;
+    min-height: 40px;
+    max-height: 40px;
     line-height: 1.4; } }
 
 @media (min-width: 1200px) {

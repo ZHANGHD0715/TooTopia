@@ -217,7 +217,8 @@ blockquote {
 
 @media (min-width: $breakpoints-medium) {
     .entry-title {
-        min-height: 48px;
+        min-height: 40px;
+        max-height: 40px;
         line-height: 1.4;
     }
 }
