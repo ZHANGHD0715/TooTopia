@@ -127,9 +127,12 @@
             <span class="share-title">关注我们</span>
             <div class="share-icon-list">
                 <span class="share-icon-wechat" data-toggle="modal" data-target=".js-share-wechat"></span>
-                <span class="share-icon-weibo" data-toggle="modal" data-target=".js-share-wechat"></span>
-                <span class="share-icon-douban" data-toggle="modal" data-target=".js-share-wechat"></span>
-                <span class="share-icon-facebook" data-toggle="modal" data-target=".js-share-wechat"></span>
+                <a href="http://weibo.com/tootopia" target="about:blank">
+                    <span class="share-icon-weibo"></span>
+                </a>
+                <a href="https://www.facebook.com/tootopiatw/?fref=ts" target="about:blank">
+                    <span class="share-icon-facebook"></span>
+                </a>
             </div>
         </div>
     </aside>

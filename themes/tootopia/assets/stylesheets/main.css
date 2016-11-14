@@ -1987,6 +1987,9 @@ a:focus {
 .entry-wrap {
   position: relative;
   padding: 20px 10px 10px; }
+  .entry-wrap img {
+    max-width: 100%;
+    height: auto; }
 
 article {
   padding: 0; }
@@ -2500,7 +2503,7 @@ a.comment-reply-link > span {
  * -------------------------- */
 .pagination {
   width: 100%;
-  margin: 25px 15px;
+  padding: 25px 15px;
   clear: both;
   padding-top: 0; }
 
@@ -2629,7 +2632,7 @@ a.comment-reply-link > span {
   margin-right: 2rem;
   width: 100px;
   height: 100px;
-  background-image: url(../img/share-img/tootopia.png);
+  background-image: url(../img/share-img/weiChat.jpeg);
   -webkit-background-size: contain;
   background-size: contain; }
 

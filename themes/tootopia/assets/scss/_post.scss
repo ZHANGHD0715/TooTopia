@@ -8,6 +8,11 @@
 .entry-wrap {
     position: relative;
     padding: 20px 10px 10px;
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
 }
 
 article {
