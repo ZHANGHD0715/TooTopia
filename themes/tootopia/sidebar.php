@@ -97,7 +97,7 @@
         <?php if ( has_post_thumbnail() ) { ?>
         <div class="widget-event widget-full-thumb">
             <?php $post_thumbnail_src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'landscape-medium' ); ?>
-            <img src="<?php echo $post_thumbnail_src[0]; ?>" class="img-responsive" alt="">
+            <a href="<?php the_permalink() ?>" rel="bookmark"><img src="<?php echo $post_thumbnail_src[0]; ?>" class="img-responsive" alt=""></a>
         </div>
         <?php } ?>
         <?php endwhile; ?>
