@@ -12,7 +12,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
     <div class="entry-wrap">
-        
+
         <div>
             <?php the_category(); ?>
         </div>
@@ -34,7 +34,7 @@
             <span class="entry-meta-avator">
                 <?php echo get_avatar( get_the_author_meta('user_email'), $size = '20'); ?>
                 <?php $customise_author = get_post_meta($post->ID, "author_name", $single = true); ?>
-                
+
                 <?php if(strlen($customise_author) > 0): ?>
                     <?php echo $customise_author; ?>
                 <?php else:?>
@@ -47,8 +47,14 @@
                 <?php the_date(); ?>
             </span>
         </div>
-            
-        <?php if ( is_single() ) { ?>    
+
+
+        <?php if ( is_single() ) { ?>
+
+        <div class="entry-excerpt">
+            <?php the_excerpt(); ?>
+        </div>
+
         <div class="entry-content">
             <?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'retouch' ) ); ?>
             <?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'retouch' ), 'after' => '</div>' ) ); ?>
@@ -56,12 +62,12 @@
         <?php } ?>
         <!-- .entry-content -->
 
-        <?php if ( the_tags() ) { ?>    
+        <?php if ( the_tags() ) { ?>
         <div class="tagcloud">
             <?php the_tags(); ?>
         </div>
         <?php } ?>
-        
+
     </div>
     <!-- .entry-wrap -->
     <?php if ( is_singular() && get_the_author_meta( 'description' ) && is_multi_author() ) : // If a user has filled out their description and this is a multi-author blog, show a bio on their entries. ?>

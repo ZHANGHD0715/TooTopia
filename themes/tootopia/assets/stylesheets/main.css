@@ -2189,6 +2189,16 @@ blockquote {
     color: #af8e4f;
     font-size: 16px; }
 
+.single .entry-excerpt {
+  margin-top: 20px;
+  background-color: #eee;
+  padding: 20px 20px 10px;
+  line-height: 1.5;
+  color: #888; }
+
+.single .entry-content p {
+  line-height: 1.9; }
+
 .single .entry-title {
   font-size: 30px; }
 

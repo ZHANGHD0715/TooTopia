@@ -22,10 +22,24 @@
         }
     }
 
+    .entry-excerpt {
+        margin-top: 20px;
+        background-color: $light-gray;
+        padding: 20px 20px 10px;
+        line-height: 1.5;
+        color: $darkest-gray;
+    }
+
+    .entry-content {
+        p {
+          line-height: 1.9;  
+        }
+    }
+
     .entry-title {
         font-size: 30px;
     }
-    
+
     .entry-meta-single {
         font-size: 14px;
         color: $dark-gray;
