@@ -1979,6 +1979,16 @@ a:focus {
   font-weight: 400;
   font-size: 11px; }
 
+.tp-caption.largeblackbg {
+  font-size: 18px !important;
+  font-size: 12px !important; }
+
+@media (min-width: 992px) {
+  .tp-caption.largeblackbg {
+    font-size: 24px !important; }
+  .tp-caption.largeblackbg-small {
+    font-size: 14px !important; } }
+
 /* Post
  * -------------------------- */
 .post-wrapper {
