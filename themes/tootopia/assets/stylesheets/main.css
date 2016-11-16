@@ -1980,7 +1980,9 @@ a:focus {
   font-size: 11px; }
 
 .tp-caption.largeblackbg {
-  font-size: 18px !important;
+  font-size: 18px !important; }
+
+.tp-caption.largeblackbg-small {
   font-size: 12px !important; }
 
 @media (min-width: 992px) {
