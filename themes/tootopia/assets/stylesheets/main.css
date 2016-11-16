@@ -2117,7 +2117,7 @@ article.format-status .entry-content p {
     white-space: nowrap;
     overflow: hidden;
     display: inline-block;
-    vertical-align: bottom; }
+    vertical-align: middle; }
 
 .entry-meta .post-date {
   margin-right: 0;
@@ -2174,7 +2174,7 @@ blockquote {
     white-space: nowrap;
     overflow: hidden;
     display: inline-block;
-    vertical-align: bottom;
+    vertical-align: middle;
     max-width: 80px; } }
 
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -2183,7 +2183,7 @@ blockquote {
     white-space: nowrap;
     overflow: hidden;
     display: inline-block;
-    vertical-align: bottom;
+    vertical-align: middle;
     max-width: 120px; } }
 
 /* Single Post
