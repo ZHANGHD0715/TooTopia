@@ -32,13 +32,18 @@
         <!-- meta information -->
         <div class="entry-meta-single" >
             <span class="entry-meta-avator">
-                <?php echo get_avatar( get_the_author_meta('user_email'), $size = '20'); ?>
+                <span>作者:</span>
+                <!--<?php echo get_avatar( get_the_author_meta('user_email'), $size = '20'); ?>-->
                 <?php $customise_author = get_post_meta($post->ID, "author_name", $single = true); ?>
 
                 <?php if(strlen($customise_author) > 0): ?>
+                <a href="../../../../author/<?php echo $customise_author;?>">
                     <?php echo $customise_author; ?>
+                </a>
                 <?php else:?>
+                <a href="../../../../author/<?php the_author(); ?>">
                     <?php the_author(); ?>
+                </a>
                 <?php endif;?>
             </span>
 

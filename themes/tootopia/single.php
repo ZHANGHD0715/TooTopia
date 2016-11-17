@@ -24,18 +24,11 @@
 
                         <?php $count_posts = wp_count_posts(); ?>
                         <?php $published_posts = $count_posts->publish; ?>
+                        <nav class="nav-single"></nav>
                         <?php if ( $published_posts > 1 ) { ?>
-                        <nav class="nav-single">
-                            <h3 class="assistive-text"><?php _e( 'Post navigation', 'twentytwelve' ); ?></h3>
-                            <span class="nav-previous"><?php previous_post_link( '%link', '<span class="meta-nav">' . _x( '&larr;', 'Previous post link', 'twentytwelve' ) . '</span> %title' ); ?></span>
-                            <span class="nav-next"><?php next_post_link( '%link', '%title <span class="meta-nav">' . _x( '&rarr;', 'Next post link', 'twentytwelve' ) . '</span>' ); ?></span>
-                        </nav>
-                        
-                        <div id="related-post" class="row clearfix">
-                            <?php wp_related_posts()?> 
-                        </div>
-                        
-                        <!-- .nav-single -->
+                            <div id="related-post" class="row clearfix">
+                                <?php wp_related_posts()?> 
+                            </div>
                         <?php } ?>
                         <?php comments_template( '', true ); ?>
                         <?php endwhile; // end of the loop. ?>
