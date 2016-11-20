@@ -37,11 +37,11 @@
                 <?php $customise_author = get_post_meta($post->ID, "author_name", $single = true); ?>
 
                 <?php if(strlen($customise_author) > 0): ?>
-                <a href="../../../../author/<?php echo $customise_author;?>">
+                <a href="../../../../authors/<?php echo $customise_author;?>">
                     <?php echo $customise_author; ?>
                 </a>
                 <?php else:?>
-                <a href="../../../../author/<?php the_author(); ?>">
+                <a href="../../../../authors/<?php the_author(); ?>">
                     <?php the_author(); ?>
                 </a>
                 <?php endif;?>

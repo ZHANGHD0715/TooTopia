@@ -2847,4 +2847,11 @@
             }
         }
         add_action('wp_footer', 'rt_color_skin', 100);
+
+        function cng_author_base() {
+            global $wp_rewrite;
+            $author_slug = 'authors'; // change slug name
+            $wp_rewrite->author_base = $author_slug;
+        }
+        add_action('init', 'cng_author_base');
     
