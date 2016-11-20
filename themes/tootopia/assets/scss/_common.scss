@@ -1,0 +1,11 @@
+.btn-white {
+  color: $darkest-gray;
+  border: 1px solid $medium-gray;
+  border-radius: 15px;
+  padding: 5px 12px!important;
+  font-size: 14px!important;
+
+  &:hover {
+    color: $primary-color;
+  }
+}

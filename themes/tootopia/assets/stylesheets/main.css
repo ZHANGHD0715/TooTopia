@@ -1,4 +1,13 @@
 @charset "UTF-8";
+.btn-white {
+  color: #888;
+  border: 1px solid #cacaca;
+  border-radius: 15px;
+  padding: 5px 12px !important;
+  font-size: 14px !important; }
+  .btn-white:hover {
+    color: #af8e4f; }
+
 /*
 Theme Name: ReTouch
 Theme URI: http://wobootstrap.com/wp/retouch/v1.2
@@ -1959,28 +1968,41 @@ a:focus {
 #footer-1 .widget-list > li {
   border-color: rgba(255, 255, 255, 0.1); }
 
-.widget_tudou_tan {
+.widget-float {
   position: relative;
   padding: 0 !important; }
-  .widget_tudou_tan .widget-title {
+  .widget-float .widget-title {
     position: absolute;
     left: 20px;
     top: 20px;
     z-index: 9999;
     color: #fff; }
-  .widget_tudou_tan > ul > li {
+  .widget-float > ul > li {
     margin-bottom: 0; }
-  .widget_tudou_tan .widget-entry-thumb {
+  .widget-float .widget-entry-thumb {
     position: relative;
     padding-top: 100%;
     overflow: hidden; }
-    .widget_tudou_tan .widget-entry-thumb img {
+    .widget-float .widget-entry-thumb img {
       position: absolute;
       top: 0;
       height: 100%;
       max-width: none; }
-  .widget_tudou_tan .widget-entry-summary-wrapper {
-    padding-top: 30px; }
+  .widget-float .widget-entry-summary-wrapper {
+    padding-top: 30px;
+    padding-right: 30px; }
+  .widget-float .widget-float_content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    z-index: 9999; }
+  .widget-float .widget-float_title {
+    font-size: 18px;
+    color: #c2a05f; }
+  .widget-float .widget-float_excerpt {
+    color: #eee; }
+  .widget-float .widget-float-half_more {
+    margin-top: 20px; }
 
 .rev_slider .slider-text .slider-title {
   font-size: 30px; }

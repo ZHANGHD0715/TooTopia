@@ -53,51 +53,20 @@
     </aside>
 
     <!-- 侧边栏 土豆摊 -->
-    <aside class="widget widget_recent_entries widget_tudou_tan" >
+    <aside class="widget widget-full-wrapper widget-float widget_tudou_tan" >
 
         <h3 class="widget-title">土逗摊</h3>
         <?php query_posts('showposts=1&category_name="tu-dou-tan"'); ?>
-
-        <ul>
-            <?php while (have_posts()) : the_post(); ?>
-                <li>
-                    <div class="row">
-                        <div class="col-xs-6 widget-entry-thumb-wrapper">
-                            <!-- thumbnail -->
-                            <?php if ( !is_single() && has_post_thumbnail() ) { ?>
-                            <div class="widget-entry-thumb">
-                                <?php $post_thumbnail_src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'landscape-medium' ); ?>
-                                <img src="<?php echo $post_thumbnail_src[0]; ?>" class="img-responsive" alt="">
-                            </div>
-                            <?php } ?>
-                        </div>
-
-                        <div class="col-xs-6 widget-entry-summary-wrapper">
-                            <a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a>
-                            <div class="widget-post-date" >
-                                <span class="text-date">
-                                    <?php the_date() ?>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-            <?php endwhile; ?>
-        </ul>
-
-    </aside>
-
-    <!-- 侧边栏 活动 -->
-    <aside class="widget widget-full-wrapper" >
-
-        <!-- <h3 class="widget-title">活动</h3> -->
-        <?php query_posts('showposts=1&category_name="tu-dou-huo-dong"'); ?>
 
         <?php while (have_posts()) : the_post(); ?>
         <?php if ( has_post_thumbnail() ) { ?>
         <div class="widget-event widget-full-thumb">
             <?php $post_thumbnail_src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'landscape-medium' ); ?>
             <a href="<?php the_permalink() ?>" rel="bookmark"><img src="<?php echo $post_thumbnail_src[0]; ?>" class="img-responsive" alt=""></a>
+            <div class="widget-float_content">
+              <a href="<?php the_permalink() ?>" rel="bookmark" class="widget-float_title"><?php the_title(); ?></a>
+              <a href="<?php the_permalink() ?>" rel="bookmark" class="widget-float_excerpt" ><?php the_excerpt(); ?></a>
+            </div>
         </div>
         <?php } ?>
         <?php endwhile; ?>
@@ -121,6 +90,43 @@
     </aside>
 
     <?php dynamic_sidebar( $sidebar ); ?>
+
+    <!-- 侧边栏 土豆活动 -->
+    <aside class="widget widget_recent_entries widget-float" >
+
+        <h3 class="widget-title">土逗活动</h3>
+        <?php query_posts('showposts=1&category_name="tu-dou-huo-dong"'); ?>
+
+        <ul>
+            <?php while (have_posts()) : the_post(); ?>
+                <li>
+                    <div class="row">
+                        <div class="col-xs-6 widget-entry-thumb-wrapper">
+                            <!-- thumbnail -->
+                            <?php if ( !is_single() && has_post_thumbnail() ) { ?>
+                            <div class="widget-entry-thumb">
+                                <?php $post_thumbnail_src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'landscape-medium' ); ?>
+                                <img src="<?php echo $post_thumbnail_src[0]; ?>" class="img-responsive" alt="">
+                            </div>
+                            <?php } ?>
+                        </div>
+
+                        <div class="col-xs-6 widget-entry-summary-wrapper">
+                            <a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a>
+                            <div class="widget-post-date" >
+                                <span class="text-date">
+                                    <?php the_date() ?>
+                                </span>
+                            </div>
+
+                            <a class="btn btn-white widget-float-half_more" href="<?php the_permalink() ?>" rel="bookmark">详情</a>
+                        </div>
+                    </div>
+                </li>
+            <?php endwhile; ?>
+        </ul>
+
+    </aside>
 
     <aside class="widget">
         <div class="row">

@@ -50,7 +50,7 @@
     border-color: rgba(255, 255, 255, 0.1);
 }
 
-.widget_tudou_tan {
+.widget-float {
     position: relative;
     padding: 0!important;
     .widget-title {
@@ -76,5 +76,24 @@
     }
     .widget-entry-summary-wrapper {
         padding-top: 30px;
+        padding-right: 30px;
+    }
+
+    .widget-float_content {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      z-index: 9999;
+    }
+    .widget-float_title {
+      font-size: 18px;
+      color: $gold-color;
+    }
+    .widget-float_excerpt {
+      color: $light-gray;
+    }
+
+    .widget-float-half_more {
+      margin-top: 20px;
     }
 }
