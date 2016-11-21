@@ -37,7 +37,7 @@
                 <?php $customise_author = get_post_meta($post->ID, "author_name", $single = true); ?>
 
                 <?php if(strlen($customise_author) > 0): ?>
-                <a href="../../../../authors/<?php echo $customise_author;?>">
+                <a href="../../../../?s=author_name/<?php echo $customise_author;?>">
                     <?php echo $customise_author; ?>
                 </a>
                 <?php else:?>
