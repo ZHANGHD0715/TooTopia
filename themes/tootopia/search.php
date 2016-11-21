@@ -27,7 +27,7 @@
                                 );
                         $is_regular_search = false;
                         $rd_query = new WP_Query($args);
-                        $rd_query->the_post();
+                        //$rd_query->the_post();
                     }
                     else {
                         $template = "%s 的搜索结果";
@@ -74,12 +74,12 @@
 
                     <?php endif; ?>
                 <?php else : ?>
-                    <?php if($rd_query->have_posts()) : ?>                       
-                            <?php while($rd_query->have_posts()) : $rd_query->the_post(); ?>
-                                <div class="col-xs-12 col-md-4 col-lg-3 article-wrap isotope-item">
-                                <?php get_template_part( 'template-parts/content', 'teaser' ); ?>
-                                </div>   
-                            <?php endwhile; wp_reset_query();?>         
+                    <?php if( $rd_query->have_posts()) : ?>                       
+                        <?php while($rd_query->have_posts()) : $rd_query->the_post(); ?>
+                            <div class="col-xs-12 col-md-4 col-lg-3 article-wrap isotope-item">
+                            <?php get_template_part( 'template-parts/content', 'teaser' ); ?>
+                            </div>   
+                        <?php endwhile; wp_reset_query();?>         
                     <?php else : ?>
                         <article id="post-0" class="post no-results not-found">
                             <div class="entry-wrap">
