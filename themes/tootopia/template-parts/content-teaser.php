@@ -15,12 +15,14 @@
 
         <!-- thumbnail -->
         <div class="post-thumb entry-thumb">
+          <a href="<?php the_permalink(); ?>" >
         <?php if ( has_post_thumbnail() ) { ?>
             <?php $post_thumbnail_src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'landscape-medium' ); ?>
             <img data-src="<?php echo $post_thumbnail_src[0]; ?>" class="img-responsive lazy" alt="<?php the_title(); ?>" />
         <?php } else { ?>
             <img data-src="<?php bloginfo('template_directory'); ?>/assets/img/post-fallback.png" class="img-responsive lazy" alt="<?php the_title(); ?>" />
         <?php } ?>
+          </a>
         </div>
 
         <!-- title -->

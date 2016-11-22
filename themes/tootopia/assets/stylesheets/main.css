@@ -2267,7 +2267,8 @@ blockquote {
   font-size: 14px; }
 
 .single .entry-content p {
-  line-height: 2; }
+  line-height: 2;
+  margin: 24px 0; }
 
 .single .entry-title {
   font-size: 30px; }
@@ -2557,7 +2558,9 @@ a.comment-reply-link > span {
   padding-left: 10px;
   padding-right: 10px;
   font-size: 16px;
-  line-height: 1.8; }
+  line-height: 2.0; }
+  .about-us_content p {
+    margin: 20px 0; }
 
 .about-us_contact {
   border-top: 1px dashed #af8e4f; }

@@ -80,10 +80,10 @@
             </div>
             <div class="focus-us-content">
                 <div class="main-title">
-                    訂閱土逗公社
+                    订阅土逗公社
                 </div>
                 <div class="sub-title ">
-                    一起尋求社會變革
+                    探索人类更好的活法
                 </div>
             </div>
         </div>
