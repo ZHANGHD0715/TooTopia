@@ -27,14 +27,8 @@
                 <div class="row">
                     <div class="col-xs-12 col-sm-5">
                         <div class="site-info">
-			                <?php do_action( 'retouch_credits' ); ?>
-                            <?php $footer_text = stripslashes($data['footer_text']); ?>
-                            <?php if (empty($footer_text)) { ?>
-                                Coryright &copy;2016 破土网 版权所有
-                            <?php } else{ ?>
-                                <?php echo do_shortcode( $footer_text ); ?>
-                            <?php } ?>
-		                </div><!-- .site-info -->
+                        	Coryright &copy;2016 破土网 版权所有 | 粤ICP备16092561号-1
+		                </div>
                     </div>
                     <div class="col-xs-12 col-sm-7">
                         <?php wp_nav_menu( array( 'theme_location' => 'secondary', 'menu_class' => 'nav-menu', 'depth' => 1 ) ); ?>
