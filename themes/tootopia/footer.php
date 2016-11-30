@@ -12,7 +12,7 @@
 	 <?php global $data; ?>
 
 	<footer id="colophon" role="contentinfo">
-        
+
 
 <?php
 	/* A sidebar in the footer? Yep. You can can customize
@@ -21,13 +21,13 @@
 	get_sidebar( 'footer' );
 ?>
 
-          
+
         <div id="footer-2" class="footer-2">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-sm-5">
                         <div class="site-info">
-                        	Coryright &copy;2016 破土网 版权所有 | 粤ICP备16092561号-1
+                        	Coryright &copy;2016 土逗公社 版权所有 | 粤ICP备16092561号-1
 		                </div>
                     </div>
                     <div class="col-xs-12 col-sm-7">
@@ -38,7 +38,7 @@
         </div>
 
 
-		
+
 	</footer><!-- #colophon -->
 
 </div><!-- #page -->
@@ -49,9 +49,9 @@
 
 <div id="skin-chooser-wrap" class="skin-chooser-wrap hidden-xs">
                 <span class="skin-chooser-toggle"><i class="fa fa-cog"></i></span>
-                
+
                 <section class="section">
-                    <h4>Style Switcher</h4>         
+                    <h4>Style Switcher</h4>
                 </section>
 
                 <section class="section">
@@ -66,7 +66,7 @@
                 <section class="section">
                     <h6>Color Schemes</h6>
                 <p>Which theme color you want to use? Here are some predefined colors.</p>
-                
+
                 <ul class="list-inline">
                     <li>
                         <div id="color-skin-1" class="color-skin active"></div>
@@ -88,7 +88,7 @@
                 <section class="section">
                     <h6>Patterns</h6>
                 <p>You can choose between four patterns.</p>
-                
+
                 <ul class="list-inline">
                     <li>
                         <div id="color-pattern-1" class="color-pattern active"></div>
@@ -109,7 +109,7 @@
                 </section>
             </div>
             <!-- /#skin-chooser-wrap -->
-     
+
 <?php } ?>
 
 <?php echo stripslashes($data['google_analytics']); ?>
