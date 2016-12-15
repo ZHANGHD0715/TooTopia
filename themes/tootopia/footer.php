@@ -27,7 +27,10 @@
                 <div class="row">
                     <div class="col-xs-12 col-sm-5">
                         <div class="site-info">
-                        	Coryright &copy;2016 土逗公社 版权所有 | 粤ICP备16092561号-1
+                        	Coryright &copy;2016 土逗公社 版权所有 | 粤ICP备16092561号-1 |
+				<span>
+					<a href="http://www.cnzz.com/stat/website.php?web_id=1260889139">站长统计</a>
+				</span>
 		                </div>
                     </div>
                     <div class="col-xs-12 col-sm-7">
