@@ -24,9 +24,17 @@
 
         <div id="footer-2" class="footer-2">
             <div class="container">
-                <div class="row text-center links-container">
-                    <div class="col-xs-12">
-                        <span>友情链接：</span>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="site-info">
+                        	Coryright &copy;2016 土逗公社 版权所有 | 粤ICP备16092561号-1 |
+                            <span>
+                                <a href="http://www.cnzz.com/stat/website.php?web_id=1260889139">站长统计</a>
+                            </span>
+		                </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 text-right links-container">
+                       <span>友情链接：</span>
                         <span class="link-item">
 					        <a href="http://www.ngocn.net">NGOCN</a>
 				        </span>
@@ -39,19 +47,6 @@
                         <span class="link-item">
 					        <a href="http://www.caa-ins.org">网络社会研究所</a>
 				        </span>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12 col-sm-5">
-                        <div class="site-info">
-                        	Coryright &copy;2016 土逗公社 版权所有 | 粤ICP备16092561号-1 |
-                            <span>
-                                <a href="http://www.cnzz.com/stat/website.php?web_id=1260889139">站长统计</a>
-                            </span>
-		                </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-7">
-                        <?php wp_nav_menu( array( 'theme_location' => 'secondary', 'menu_class' => 'nav-menu', 'depth' => 1 ) ); ?>
                     </div>
                 </div>
             </div>
