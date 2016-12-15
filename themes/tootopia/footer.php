@@ -24,13 +24,30 @@
 
         <div id="footer-2" class="footer-2">
             <div class="container">
+                <div class="row text-center links-container">
+                    <div class="col-xs-12">
+                        <span>友情链接：</span>
+                        <span class="link-item">
+					        <a href="http://www.ngocn.net">NGOCN</a>
+				        </span>
+                        <span class="link-item">
+					        <a href="http://cnpolitics.org">政见</a>
+				        </span>
+                        <span class="link-item">
+					        <a href="http://www.jianjiaobuluo.com">尖椒部落</a>
+				        </span>
+                        <span class="link-item">
+					        <a href="http://www.caa-ins.org">网络社会研究所</a>
+				        </span>
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col-xs-12 col-sm-5">
                         <div class="site-info">
                         	Coryright &copy;2016 土逗公社 版权所有 | 粤ICP备16092561号-1 |
-				<span>
-					<a href="http://www.cnzz.com/stat/website.php?web_id=1260889139">站长统计</a>
-				</span>
+                            <span>
+                                <a href="http://www.cnzz.com/stat/website.php?web_id=1260889139">站长统计</a>
+                            </span>
 		                </div>
                     </div>
                     <div class="col-xs-12 col-sm-7">
@@ -39,8 +56,6 @@
                 </div>
             </div>
         </div>
-
-
 
 	</footer><!-- #colophon -->
 

@@ -1714,6 +1714,11 @@ a:focus {
   margin-right: -15px;
   margin-left: -15px; }
 
+.links-container {
+  margin-bottom: 2rem; }
+  .links-container .link-item {
+    padding-left: 1rem; }
+
 @media (min-width: 768px) {
   #main.has-fixed-header {
     margin-top: 100px; } }
