@@ -122,11 +122,11 @@
                 </section>
             </div>
             <!-- /#skin-chooser-wrap -->
+
 <?php } ?>
 
 <?php echo stripslashes($data['google_analytics']); ?>
 
 <?php wp_footer(); ?>
-<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/zh-cn-tw.js"></script>
 </body>
 </html>

@@ -54,13 +54,9 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-
+                            
                             <div class="navbar-search pull-right show-in-mobile">
                                 <i class="fa fa-search" aria-hidden="true"></i>
-                            </div>
-
-                            <div class="navbar-chinese-convert pull-right show-in-mobile">
-                                <a class="wencode" onclick="var button = document.getElementById('StranLink'); button.click(); this.innerText= button.innerText; ">繁體</a>
                             </div>
 
                             <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
@@ -75,11 +71,7 @@
                         <div class="navbar-right navbar-search hidden-in-mobile">
                             <i class="fa fa-search" aria-hidden="true"></i>
                         </div>
-
-                        <div class="navbar-right navbar-chinese-convert hidden-in-mobile">
-                            <a id="StranLink" class="wencode">繁體</a>
-                        </div>
-
+                        
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <?php
                             wp_nav_menu( array(
@@ -94,12 +86,11 @@
                                 'walker'            => new wp_bootstrap_navwalker())
                             );
                         ?>
-                
+                        
                         <!-- search input box -->
                         <?php get_search_form(); ?>
 
                     </div><!-- /.container -->
-                    
                 </nav>
                 <!-- /.navbar -->
 
