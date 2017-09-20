@@ -1,5 +1,6 @@
 debug.log
 themes/tootopia/.DS_Store
+.DS_Store
 themes/tootopia/*.sass-cache*
 
 themes/FoundationPress-master/
