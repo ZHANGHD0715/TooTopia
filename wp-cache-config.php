@@ -5,12 +5,16 @@ WP-Cache Config Sample File
 See wp-cache.php for author details.
 */
 
+$wp_cache_debug_username = '81653b390f89bc28b45284bba9bc37ec'; //Added by WP-Cache Manager
+$wpsc_save_headers = 0; //Added by WP-Cache Manager
+$cached_direct_pages = array(  ); //Added by WP-Cache Manager
+$wp_cache_home_path = '/'; //Added by WP-Cache Manager
 $cache_schedule_interval = 'rrrlgvwr_interval'; //Added by WP-Cache Manager
 $cache_gc_email_me = 0; //Added by WP-Cache Manager
 $cache_scheduled_time = '00:00'; //Added by WP-Cache Manager
 $wp_cache_mobile_groups = ''; //Added by WP-Cache Manager
 $wp_cache_mobile_prefixes = 'w3c , w3c-, acs-, alav, alca, amoi, audi, avan, benq, bird, blac, blaz, brew, cell, cldc, cmd-, dang, doco, eric, hipt, htc_, inno, ipaq, ipod, jigs, kddi, keji, leno, lg-c, lg-d, lg-g, lge-, lg/u, maui, maxo, midp, mits, mmef, mobi, mot-, moto, mwbp, nec-, newt, noki, palm, pana, pant, phil, play, port, prox, qwap, sage, sams, sany, sch-, sec-, send, seri, sgh-, shar, sie-, siem, smal, smar, sony, sph-, symb, t-mo, teli, tim-, tosh, tsm-, upg1, upsi, vk-v, voda, wap-, wapa, wapi, wapp, wapr, webc, winw, winw, xda , xda-'; //Added by WP-Cache Manager
-$wp_cache_refresh_single_only = '1'; //Added by WP-Cache Manager
+$wp_cache_refresh_single_only = 1; //Added by WP-Cache Manager
 $wp_cache_make_known_anon = 0; //Added by WP-Cache Manager
 $wp_cache_mod_rewrite = 0; //Added by WP-Cache Manager
 $wp_cache_front_page_checks = 1; //Added by WP-Cache Manager
@@ -28,7 +32,7 @@ if ( ! defined('WPCACHEHOME') )
 $cache_compression = 1; //Added by WP-Cache Manager
 $cache_enabled = true; //Added by WP-Cache Manager
 $super_cache_enabled = true; //Added by WP-Cache Manager
-$cache_max_time = 3600; //Added by WP-Cache Manager
+$cache_max_time = 7200; //Added by WP-Cache Manager
 //$use_flock = true; // Set it true or false if you know what to use
 $cache_path = WP_CONTENT_DIR . '/cache/';
 $file_prefix = 'wp-cache-';
@@ -45,7 +49,7 @@ $cache_rebuild_files = 1; //Added by WP-Cache Manager
 // Disable the file locking system.
 // If you are experiencing problems with clearing or creating cache files
 // uncommenting this may help.
-$wp_cache_mutex_disabled = 0; //Added by WP-Cache Manager
+$wp_cache_mutex_disabled = 1; //Added by WP-Cache Manager
 
 // Just modify it if you have conflicts with semaphores
 $sem_id = 1789020891; //Added by WP-Cache Manager
@@ -73,12 +77,12 @@ $wp_super_cache_front_page_notification = '0';
 
 $wp_cache_object_cache = 0; //Added by WP-Cache Manager
 $wp_cache_anon_only = 0;
-$wp_supercache_cache_list = 0; //Added by WP-Cache Manager
+$wp_supercache_cache_list = 1; //Added by WP-Cache Manager
 $wp_cache_debug_to_file = 0;
 $wp_super_cache_debug = 0;
 $wp_cache_debug_level = 5;
 $wp_cache_debug_ip = '';
-$wp_cache_debug_log = '';
+$wp_cache_debug_log = '085831195b61c0d57740fdadaf1d59d5.php'; //Added by WP-Cache Manager
 $wp_cache_debug_email = '';
 $wp_cache_pages[ "search" ] = 0; //Added by WP-Cache Manager
 $wp_cache_pages[ "feed" ] = 0; //Added by WP-Cache Manager
