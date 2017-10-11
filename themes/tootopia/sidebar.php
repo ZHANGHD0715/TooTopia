@@ -21,8 +21,8 @@
     <!-- 侧边栏 专栏 -->
     <aside class="widget widget_recent_entries" >
 
-        <h3 class="widget-title">土逗谈</h3>
-        <?php query_posts('showposts=3&category_name="tu-dou-talk"'); ?>
+        <h3 class="widget-title">炖新闻</h3>
+        <?php query_posts('showposts=3&category_name="dun-xin-wen"'); ?>
 
         <ul>
             <?php while (have_posts()) : the_post(); ?>
